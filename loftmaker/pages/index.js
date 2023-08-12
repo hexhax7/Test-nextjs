@@ -1,17 +1,24 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import { useEffect } from 'react';
 import MenuComponent from '../Components/MenuComponents';
-import MainImage from '../public/65.jpg'
+import React from 'react';
+ 
 import Logo from "../public/3.png"
-
 import Link from 'next/link'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
-import globals from "@/pages/_app"
+
 
 
 const inter = Inter({ subsets: ['latin'] })
+
+const images = [
+  { src: '/56.jpeg' },
+  { src: '/24.jpg' },
+  { src: '/61.jpg' },
+  // Add more images as needed
+];
+
 
 export default function Home({ mainHeaderText}) {
   return (
@@ -22,7 +29,7 @@ export default function Home({ mainHeaderText}) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
       </Head>
       <main>
 
@@ -60,18 +67,31 @@ export default function Home({ mainHeaderText}) {
           
         </ul>
     </header>
-        <div>
-          <h1 className={styles.mainheader}> {mainHeaderText}</h1>
+        <div className="Show-Landscape">
+          <h1 className= {styles.mainheader} > {mainHeaderText}</h1>
           <Image 
-          loading='lazy'
-            src= {MainImage}
-            blurDataURL="data:..." automatically provided
-            placeholder="blur"
-           width={2000}
-           
-            alt="finished loft exterior"
-          />
+              loading='lazy'
+                src= "/65.jpg"
+                blurDataURL="data:..." automatically provided
+                placeholder="blur"
+                height={1250}
+                width={2000}
+                alt="Bathroom Photo"
+              />
         </div>
+        <div className="Show-portrait">
+        <h1 className= {styles.mainheader_portrait} > {mainHeaderText}</h1>
+          <Image 
+                loading='lazy'
+                  src= "/61.jpg"
+                  blurDataURL="data:..." automatically provided
+                  placeholder="blur"
+                  height={1000}
+                  width={750}
+                  alt="Bathroom Photo"
+                />
+        </div>
+        
         <div className="Show-portrait" >
         <div className="menu">
         
@@ -88,11 +108,11 @@ export default function Home({ mainHeaderText}) {
           </ul>
 
           <footer>
-            <p >Copyright © 2023 lml.com All Rights Reserved</p>
+            
             <div className="Footer-Flex">
-              <div className="Coloumn-Footer-Flex">
-                <Link className="callLogo" href="tel:+"> +447469434317</Link>
-                <Link className="mailLogo" href="mailto:info@lml.ltd"> info@lml.ltd</Link>
+              <div className="column-Footer-Flex">
+                <Link className="callLogo" href="tel:+"> T: +447469434317</Link>
+                <Link className="mailLogo" href="mailto:info@lml.ltd"> E: info@lml.ltd</Link>
               </div>
               <Link className="BottomLogo" href="/index.html">
               <Image 
@@ -100,21 +120,22 @@ export default function Home({ mainHeaderText}) {
               src= {Logo}
               blurDataURL="data:..." automatically provided
               placeholder="blur"
-            width={2000}
+            width={100}
             
               alt="finished loft exterior"
             />
               </Link>
               <Link class="instaLogo" href="https://www.instagram.com/loftmakerlondon/">
-              <Image 
-            loading='lazy'
-              src= "/public/instagram.jpeg"
-              blurDataURL="data:..." automatically provided
-              placeholder="blur"
-            width={2000}
-            
-              alt="finished loft exterior"
-            />
+              <Image
+                    loading='lazy'
+                    src="/instagram.png"
+                    width={50}
+                    height={50}
+                    blurDataURL="data:..." 
+                    placeholder="blur"
+                    alt="Instagram Logo"
+                  
+                    />
               </Link>
             </div>
           </footer>
@@ -131,7 +152,7 @@ export default function Home({ mainHeaderText}) {
     </div>
         
         <div className={styles.intro}>
-          <h1>Loft Maker London Ltd</h1>
+          
           <br/>
           <br/>
           <p>Loftmaker London offers personalized and tailored solutions for every home, recognizing its unique characteristics. With our dedicated on-site builders and effective project management, we ensure a smooth and hassle-free experience for our clients. Our extensions and loft conversions not only meet building standards but also prioritize sustainability while providing creative and cost-effective solutions.</p>
@@ -185,11 +206,10 @@ export default function Home({ mainHeaderText}) {
             <li>and more</li>
             </ul>
           </div>
-          <div className={styles.flex_container_image}>
-         
-          </div>
+          
           </div>
           <Image
+          className="Show-Landscape"
           loading='lazy'
             src="/DoorKnob.jpg"
             width={928}
@@ -208,18 +228,16 @@ export default function Home({ mainHeaderText}) {
           <div className="Content">
               <div>
                 <Image
+                className='Content-Image'
                 loading='lazy'
                 src="/En2AL/Bathroom-1.jpg"
-                width={928}
-                height={1160}
+                width={728}
+                height={960}
                 blurDataURL="data:..." 
                 placeholder="blur"
                 alt="finished loft exterior"
               
-                style={{
-                  width: 'auto ',
-                  height: '75vh',
-                }} />
+                 />
             </div>
           </div>
           <div className={styles.About_Content}> <h1> About </h1>
@@ -262,8 +280,8 @@ export default function Home({ mainHeaderText}) {
       
           <div className="Footer-Flex">
             <div className="column-Footer-Flex">
-              <Link className="callLogo" href="tel:+"> +447469434317</Link>
-              <Link href="mailto:info@lml.ltd"> info@lml.ltd</Link>
+              <Link className="callLogo" href="tel:+"> T: +447469434317</Link>
+              <Link href="mailto:info@lml.ltd"> E: info@lml.ltd</Link>
             </div>
             <Link className="BottomLogo" href="/index.html">
             <Image
@@ -280,7 +298,7 @@ export default function Home({ mainHeaderText}) {
             <Link  href="https://www.instagram.com/loftmakerlondon/">
             <Image
                     loading='lazy'
-                    src="/public/instagram.jpeg"
+                    src="/instagram.png"
                     width={50}
                     height={50}
                     blurDataURL="data:..." 
@@ -302,3 +320,4 @@ export async function getServerSideProps() {
 
   return { props: { mainHeaderText, imageSrc } };
 }
+

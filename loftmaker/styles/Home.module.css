@@ -28,7 +28,26 @@
 
 .About_Content{
 	margin-left: 5%;
+	width: 80%;
 }
+
+.mainheader_portrait{
+	position: absolute;
+	top: 20%;
+	text-align: center;
+	color: #fe5000;
+	font-size: 8vw;
+	width: 100%;
+	font-family: 'Noto Sans', sans-serif;
+	display: display;
+
+}
+
+@media (orientation: portrait) and (max-width: 800px) {
+	.serviceList{
+		width: 80%;
+		margin-bottom: 10%;
+	}}
 .serviceList{
 	margin-left: 10%;
 }
