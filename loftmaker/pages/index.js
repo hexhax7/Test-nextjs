@@ -108,7 +108,7 @@ export default function Home({ mainHeaderText}) {
               <Link class="instaLogo" href="https://www.instagram.com/loftmakerlondon/">
               <Image 
             loading='lazy'
-              src= "/public/instagram.jpg"
+              src= "/public/instagram.jpeg"
               blurDataURL="data:..." automatically provided
               placeholder="blur"
             width={2000}
@@ -280,7 +280,7 @@ export default function Home({ mainHeaderText}) {
             <Link  href="https://www.instagram.com/loftmakerlondon/">
             <Image
                     loading='lazy'
-                    src="/public/instagram.jpg"
+                    src="/public/instagram.jpeg"
                     width={50}
                     height={50}
                     blurDataURL="data:..." 
