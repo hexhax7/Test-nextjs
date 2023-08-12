@@ -4,7 +4,7 @@ import { useEffect } from 'react';
 import MenuComponent from '../Components/MenuComponents';
 import MainImage from '../public/65.jpg'
 import Logo from "../public/3.png"
-import InstaLogo from "../public/instagram.jpg"
+
 import Link from 'next/link'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
@@ -97,7 +97,7 @@ export default function Home({ mainHeaderText}) {
               <Link className="BottomLogo" href="/index.html">
               <Image 
             loading='lazy'
-              src= {MainImage}
+              src= {Logo}
               blurDataURL="data:..." automatically provided
               placeholder="blur"
             width={2000}
@@ -108,7 +108,7 @@ export default function Home({ mainHeaderText}) {
               <Link class="instaLogo" href="https://www.instagram.com/loftmakerlondon/">
               <Image 
             loading='lazy'
-              src= {MainImage}
+              src= "/public/instagram.jpg"
               blurDataURL="data:..." automatically provided
               placeholder="blur"
             width={2000}
@@ -280,7 +280,7 @@ export default function Home({ mainHeaderText}) {
             <Link  href="https://www.instagram.com/loftmakerlondon/">
             <Image
                     loading='lazy'
-                    src={InstaLogo}
+                    src="/public/instagram.jpg"
                     width={50}
                     height={50}
                     blurDataURL="data:..." 
