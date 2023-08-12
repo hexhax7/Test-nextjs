@@ -4,7 +4,7 @@ import { useEffect } from 'react';
 import MenuComponent from '../Components/MenuComponents';
 import MainImage from '../public/65.jpg'
 import Logo from "../public/3.png"
-import InstaLogo from "../public/instagram-logo.jpg"
+import InstaLogo from "../public/instagram.jpg"
 import Link from 'next/link'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
