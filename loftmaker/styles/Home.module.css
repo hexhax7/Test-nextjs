@@ -10,6 +10,7 @@
 
 }
 
+
 .intro{
   position: relative;
   width: 80%;
@@ -24,40 +25,10 @@
   text-align: center;
 }
 
-.flex_container{
-  display: flex;
-	width: 90%;
+
+.About_Content{
 	margin-left: 5%;
 }
-.Content h1{
-	margin-left: 10%;
-}
-
-
-.Content p{
-	position: relative;
-	margin-top: 5%;
-	width: 60%;
-	left: 10%;
-}
-@media (orientation: portrait) and (max-width: 800px) {
-	.Content p{
-		position: relative;
-		margin-top: 5%;
-		
-		width: 95%;
-		left: 7%;
-	}
-}
-
-@media (orientation: portrait) and (max-width: 800px) {
-	.flex_container{ 
-		flex-direction: column;
-    width: 100%;
-	}
-	
-}
-
 .serviceList{
 	margin-left: 10%;
 }
