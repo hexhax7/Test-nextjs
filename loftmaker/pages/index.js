@@ -88,7 +88,7 @@ export default function Home({ mainHeaderText}) {
           </ul>
 
           <footer>
-            <p >Copyright © 2023 lml.com All Rights Reserved.</p>
+            <p >Copyright © 2023 lml.com All Rights Reserved</p>
             <div className="Footer-Flex">
               <div className="Coloumn-Footer-Flex">
                 <Link className="callLogo" href="tel:+"> +447469434317</Link>
