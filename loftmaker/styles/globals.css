@@ -148,8 +148,10 @@ a {
 	}
 
   .Content-Image{
+    position: relative;
     width: 100vw;
     height: auto;
+    right: 5%;
   }
 }
 
@@ -182,6 +184,9 @@ a {
 	}
 }
 
+.relative{
+  height: 100vh;
+}
 
 .menu {
 	position: fixed;

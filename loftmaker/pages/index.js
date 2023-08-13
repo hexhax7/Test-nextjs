@@ -79,15 +79,15 @@ export default function Home({ mainHeaderText}) {
                 alt="Bathroom Photo"
               />
         </div>
-        <div className="Show-portrait">
+        <div className="Show-portrait relative">
         <h1 className= {styles.mainheader_portrait} > {mainHeaderText}</h1>
           <Image 
                 loading='lazy'
                   src= "/61.jpg"
                   blurDataURL="data:..." automatically provided
                   placeholder="blur"
-                  height={1000}
-                  width={750}
+                  fill={true}
+                  style={{objectFit: "cover"}}
                   alt="Bathroom Photo"
                 />
         </div>
@@ -230,9 +230,9 @@ export default function Home({ mainHeaderText}) {
                 <Image
                 className='Content-Image'
                 loading='lazy'
-                src="/En2AL/Bathroom-1.jpg"
-                width={728}
-                height={960}
+                src="/En2AL/Bathroom-1736X981.jpg"
+                width={736}
+                height={981}
                 blurDataURL="data:..." 
                 placeholder="blur"
                 alt="finished loft exterior"

@@ -32,7 +32,7 @@
 }
 
 .mainheader_portrait{
-	position: absolute;
+	position: relative;
 	top: 20%;
 	text-align: center;
 	color: #fe5000;
@@ -40,6 +40,7 @@
 	width: 100%;
 	font-family: 'Noto Sans', sans-serif;
 	display: display;
+	z-index: 10;
 
 }
 
