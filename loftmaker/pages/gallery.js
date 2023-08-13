@@ -5,17 +5,23 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import Logo from "../public/3.png"
 import Link from 'next/link'
-
+import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 
 
 
 
+const inter = Inter({ subsets: ['latin'] })
 
+const images = [
+  { src: '/56.jpeg' },
+  { src: '/24.jpg' },
+  { src: '/61.jpg' },
+  // Add more images as needed
+];
 
 
 export default function Home({ mainHeaderText}) {
-
   return (
     <>
       <Head>
@@ -30,16 +36,13 @@ export default function Home({ mainHeaderText}) {
 
 
       <header className="nav-bar">
-        
         <ul>
-        <li>
-        <a className="menuItem-navbar" href="/">Home</a>
-      </li>
-      <motion.div
-        whileHover={{scale: 1.01}}><li>
-        <Link className="menuItem-navbar" href="/gallery">Gallery</Link>
-      </li></motion.div>
-          
+          <li>
+            <a className="menuItem-navbar" href="/">Home</a>
+          </li>
+          <li>
+            <a className="menuItem-navbar" href="/gallery.js">Gallery</a>
+          </li>
           <li>
             <a className="menuItem-navbar" href="/index.html#form-container">Contact </a>
           </li>
@@ -64,8 +67,6 @@ export default function Home({ mainHeaderText}) {
           </li>
           
         </ul>
-       
-        
     </header>
         <div className="Show-Landscape">
           <h1 className= {styles.mainheader} > {mainHeaderText}</h1>
@@ -153,7 +154,8 @@ export default function Home({ mainHeaderText}) {
     </div>
         
         <motion.div
-        
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }} 
         className={styles.intro}
         >
           
@@ -310,7 +312,11 @@ export default function Home({ mainHeaderText}) {
             </div>
           
             <div>
-        
+        <motion.button
+          className="save-Button"
+          onClick={() => null}> press me
+
+        </motion.button>
       </div>
 
           <footer>

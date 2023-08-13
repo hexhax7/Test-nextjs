@@ -111,7 +111,9 @@ a {
 	width: 90%;
 	margin-left: 5%;
 }
-
+@media  (min-width: 800px) {.flex_container{
+  height: 900px;
+}}
 .Content h1{
 	margin-left: 10%;
 }
@@ -121,11 +123,31 @@ a {
 	position: relative;
 	margin-top: 5%;
 	width: 60%;
+  min-width: 400px;
 	left: 10%;
   
 }
 
-
+.Content-Image{
+  position: relative;
+  height: 90vh;
+  width: auto;
+  right: 5%;
+}
+@media  (max-width: 1322px) and (min-width: 800px) {
+  .Content-Image{
+    position: relative;
+    height: auto;
+    width: 80%;
+   
+    left: 22%;
+    object-fit: contain;
+    }
+    
+    .Content{
+      width: 50%;
+    }
+}
 
 .Content-2 {
   margin-top: 5%;
@@ -154,6 +176,8 @@ a {
     right: 5%;
   }
 }
+
+
 
 @media (orientation: portrait) and (max-width: 800px) {
 	.flex_container{ 
@@ -188,6 +212,36 @@ a {
   height: 100vh;
 }
 
+.overlapcontainer{
+  height: 75vw;
+  width: auto;
+  
+}
+.OverLapping-Images{
+  display: grid;
+  grid-template-areas: overlay;
+}
+
+.OverLapping-Images > span{
+  grid-area: overlay;
+}
+
+.OverLapping-Images > div{
+  grid-area: overlay;
+}
+
+.Span-margin{ 
+    margin-top: 50%;
+    position: relative;
+    right: 25%;
+    display: block;
+  }
+
+@media (max-width: 1828px) {
+    .Span-margin{ 
+      
+      display: none;
+    }}
 .menu {
 	position: fixed;
 	transform: translateX(-2000%);
@@ -424,4 +478,12 @@ footer {
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
+}
+
+
+
+.save-Button{
+  background-color: black;
+ 
+  color: white;
 }
