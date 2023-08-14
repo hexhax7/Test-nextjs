@@ -108,22 +108,27 @@ a {
 
 .flex_container{
   display: flex;
+  height: 120vh;
 	width: 90%;
 	margin-left: 5%;
 }
-@media  (min-width: 800px) {.flex_container{
-  height: 900px;
-}}
+
+
+
 .Content h1{
 	margin-left: 10%;
 }
+.Content{
+  flex: 1 0 auto;
 
+}
 
 .Content p{
 	position: relative;
 	margin-top: 5%;
-	width: 60%;
-  min-width: 400px;
+  width: 70%;
+	background-color: pink;
+  min-width: 300px;
 	left: 10%;
   
 }
@@ -132,21 +137,25 @@ a {
   position: relative;
   height: 90vh;
   width: auto;
-  right: 5%;
+  max-width: 45vw;
+  right: 0%;
+  object-fit: contain;
 }
-@media  (max-width: 1322px) and (min-width: 800px) {
+@media (orientation: portrait) and (max-width: 800px) {
+
+  .flex_container {
+    flex-direction: column;
+  }
+  .About_Image{
+    display: none;
+  }
   .Content-Image{
-    position: relative;
-    height: auto;
-    width: 80%;
+   height: 100vh;
+   width: auto;
+   max-width: 100vw;
+   right: 0%;
    
-    left: 22%;
-    object-fit: contain;
-    }
-    
-    .Content{
-      width: 50%;
-    }
+  }
 }
 
 .Content-2 {
@@ -160,60 +169,44 @@ a {
    margin-left: 0%;
 }
 
-@media (orientation: portrait) and (max-width: 800px) {
-	.Content p{
-		position: relative;
-		margin-top: 5%;
-		
-		width: 80%;
-		left: 7%;
-	}
-
-  .Content-Image{
-    position: relative;
-    width: 100vw;
-    height: auto;
-    right: 5%;
-  }
-}
-
-
-
-@media (orientation: portrait) and (max-width: 800px) {
-	.flex_container{ 
-		flex-direction: column;
-    width: 100%;
-	}
-	
-}
 
 
 .Show-portrait{
 	display: none;
 }
+
 @media (orientation: portrait) and (max-width: 800px) {
-	
-	.Show-portrait{
-		display: block;
-	}
+  .Show-portrait{
+	display: block;
+}
 }
 
 .Show-Landscape{
 	display: block;
 }
+
 @media (orientation: portrait) and (max-width: 800px) {
-	
-	.Show-Landscape{
-		display: none;
-	}
+  .Show-Landscape{
+    display: none;
+  }
+  
 }
+.Show-1377 {
+  display: block;
+}
+@media (max-width: 1377px) {
+  .Show-1377 {
+    display: none;
+  }
+}
+
 
 .relative{
   height: 100vh;
 }
 
 .overlapcontainer{
-  height: 75vw;
+  height: 55vw;
   width: auto;
   
 }
@@ -237,11 +230,7 @@ a {
     display: block;
   }
 
-@media (max-width: 1828px) {
-    .Span-margin{ 
-      
-      display: none;
-    }}
+
 .menu {
 	position: fixed;
 	transform: translateX(-2000%);
@@ -302,11 +291,9 @@ a {
 	width: 30%;
 }
 
-@media (orientation: portrait) and (max-width: 800px) {
-	.showMenu{width: 100%;}
-}
+
 .nav-bar{
-	display: block;
+	
 	position: fixed;
 	width: 100%;
 	z-index: 12;
@@ -349,9 +336,7 @@ a {
 	text-decoration: none;
   }
   
-  @media (orientation: portrait) and (max-width: 800px) {
-	.nav-bar{display: none;}
-}
+  
 
 footer {
   margin-top: 15%;
@@ -367,6 +352,8 @@ footer {
 	margin-left: 10%;
 	margin-right: 10%;
 }
+
+
 
 .column-Footer-Flex {
 	display: flex;
@@ -487,3 +474,4 @@ footer {
  
   color: white;
 }
+

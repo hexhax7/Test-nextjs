@@ -27,7 +27,7 @@ export default function Home({ mainHeaderText}) {
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </Head>
 <main>
-  <header className="nav-bar">
+  <header className="nav-bar Show-Landscape">
     <ul>
       <li>
         <a className="menuItem-navbar" href="/">Home</a>
@@ -128,7 +128,7 @@ export default function Home({ mainHeaderText}) {
     </ul>
   </div>
 
-    <div className="flex_container">
+    <div className=" flex_container">
     <motion.div initial={{ opacity: 0 }} transition={{duration: 1.0}} whileInView={{ opacity: 1 }}>
       <div className="Content">
         <h1> Our Services</h1>
@@ -160,10 +160,10 @@ export default function Home({ mainHeaderText}) {
       <div className='overlapcontainer'>
         <div className='OverLapping-Images'>
           <span>
-            <Image className='Content-Image' loading='lazy' src="/En2AL/Bathroom-1736X981.jpg" width={736} height={981} blurDataURL="data:..." placeholder="blur" alt="finished loft exterior" />
+            <Image className='Content-Image ' loading='lazy' src="/En2AL/Bathroom-1736X981.jpg" width={736} height={981} blurDataURL="data:..." placeholder="blur" alt="finished loft exterior" />
           </span>
           <span className='Span-margin'>
-            <Image className="Show-Landscape" loading='lazy' src="/En2AL/Tap981.jpg" width={596} height={795} blurDataURL="data:..." placeholder="blur" alt="Tap" style={{
+            <Image className="Show-1377 " loading='lazy' src="/En2AL/Tap981.jpg" width={596} height={795} blurDataURL="data:..." placeholder="blur" alt="Tap" style={{
                   
                   width: 'auto ',
                   height: '50vh',
@@ -176,7 +176,7 @@ export default function Home({ mainHeaderText}) {
   <div className="flex_container">
     <div className="Content">
       <div>
-        <Image className="Show-Landscape" loading='lazy' src="/DoorKnob.jpg" width={928} height={1160} blurDataURL="data:..." placeholder="blur" alt="finished loft exterior" style={{
+        <Image className="Content-Image About_Image" loading='lazy' src="/DoorKnob.jpg" width={928} height={1160} blurDataURL="data:..." placeholder="blur" alt="finished loft exterior" style={{
                   
                   width: 'auto ',
                   height: '90vh',

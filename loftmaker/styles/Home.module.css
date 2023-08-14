@@ -32,18 +32,11 @@
 
 .About_Content{
 	margin-left: 5%;
-	width: 80%;
+	
+	position: relative;
+	background-color: blue;
 	
 }
-
-@media (orientation: portrait) and (max-width: 800px) {
-	.About_Content{
-		margin-left: 5%;
-		width: 80%;
-		margin-top: 70%;
-	}
-}
-
 
 
 
@@ -67,6 +60,8 @@
 	}}
 .serviceList{
 	margin-left: 10%;
+	width: 60%;
+	margin-bottom: 10%;
 }
 .serviceList li{
 	margin-left: 5%;
