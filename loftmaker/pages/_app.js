@@ -5,7 +5,7 @@ import { useRouter } from 'next/router';
 
 const roboto = Roboto({
   subsets: ["latin"],
-  weight: "300",
+  weight: "400",
 });
 
 export default function App({ Component, pageProps }) {
