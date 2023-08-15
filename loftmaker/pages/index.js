@@ -1,13 +1,17 @@
+"use client"
+
 import Head from 'next/head'
 import Image from 'next/image'
 import MenuComponent from '../Components/MenuComponents';
 import React from 'react';
-import { motion , useScroll } from 'framer-motion';
+
+
+import { motion, useScroll , useTransform} from 'framer-motion';
 import Logo from "../public/3.png"
 import Link from 'next/link'
 import AnimatedTextWord from "../Components/AnimatedTextWord";
 import styles from '@/styles/Home.module.css'
-
+import Nav_Bar from './nav-bar';
 
 
 
@@ -15,7 +19,9 @@ import styles from '@/styles/Home.module.css'
 
 
 export default function Home({ mainHeaderText}) {
-  const { scrollYProgress } = useScroll();
+  let {scrollYProgress} = useScroll();
+  let y = useTransform(scrollYProgress, [0,1], ["-25%", "50%"]);
+
   return (
     <>
       <Head>
@@ -27,31 +33,10 @@ export default function Home({ mainHeaderText}) {
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </Head>
 <main>
-  <header className="nav-bar Show-Landscape">
-    <ul>
-      <li>
-        <a className="menuItem-navbar" href="/">Home</a>
-      </li>
-      <motion.div whileHover={{scale: 1.01,
-          transition: { duration: 1 },}}>
-        <li>
-          <Link className="menuItem-navbar" href="/gallery">Gallery</Link>
-        </li>
-      </motion.div>
-      <li>
-        <a className="menuItem-navbar" href="/index.html#form-container">Contact </a>
-      </li>
-      <li>
-        <Image className='logo' loading='lazy' src={Logo} blurDataURL="data:..." automatically provided placeholder="blur" height={90} alt="Loft Maker London Ltd Logo" />
-      </li>
-      <li>
-        <div className="column-Footer-Flex-2">
-          <a className="header1email" href="tel:+447469434317">T:+447469434317</a>
-          <a className="header1num" href="mailto:info@lml.ltd">E:info@lml.ltd</a>
-        </div>
-      </li>
-    </ul>
-  </header>
+  
+    <Nav_Bar/>
+  
+  
   
   <div className="Show-Landscape">
           <div className= {styles.mainheader} > <AnimatedTextWord text="Loft Maker London Ltd" /></div>
@@ -159,16 +144,21 @@ export default function Home({ mainHeaderText}) {
       </motion.div>
       <div className='overlapcontainer'>
         <div className='OverLapping-Images'>
-          <span>
+        
+            <span>
             <Image className='Content-Image ' loading='lazy' src="/En2AL/Bathroom-1736X981.jpg" width={736} height={981} blurDataURL="data:..." placeholder="blur" alt="finished loft exterior" />
           </span>
-          <span className='Span-margin'>
+            <motion.div style={{y}}>
+            <span className='Span-margin'>
             <Image className="Show-1377 " loading='lazy' src="/En2AL/Tap981.jpg" width={596} height={795} blurDataURL="data:..." placeholder="blur" alt="Tap" style={{
                   
                   width: 'auto ',
-                  height: '50vh',
+                  height: '45vh',
                 }} />
           </span>
+            </motion.div>
+            
+            
         </div>
       </div>
     </div>
@@ -176,11 +166,13 @@ export default function Home({ mainHeaderText}) {
   <div className="flex_container">
     <div className="Content">
       <div>
-        <Image className="Content-Image About_Image" loading='lazy' src="/DoorKnob.jpg" width={928} height={1160} blurDataURL="data:..." placeholder="blur" alt="finished loft exterior" style={{
+      
+      <Image className="Content-Image About_Image" loading='lazy' src="/DoorKnob.jpg" width={928} height={1160} blurDataURL="data:..." placeholder="blur" alt="finished loft exterior" style={{
                   
                   width: 'auto ',
                   height: '90vh',
                 }} />
+       
       </div>
     </div>
     <motion.div initial={{ opacity: 0 }} transition={{duration: 1.0}} whileInView={{ opacity: 1 }} className={styles.About_Content}>
