@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@motionone/utils": "^10.15.1",
     "@next/font": "^13.4.13",
     "embla-carousel-react": "^8.0.0-rc11",
     "framer": "^2.3.0",

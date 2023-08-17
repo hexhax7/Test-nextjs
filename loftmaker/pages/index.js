@@ -4,8 +4,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import MenuComponent from '../Components/MenuComponents';
 import React from 'react';
-
-
+import Image_slider from '@/Components/ImageSlider';
 import { motion, useScroll , useTransform} from 'framer-motion';
 import Logo from "../public/3.png"
 import Link from 'next/link'
@@ -20,7 +19,7 @@ import Nav_Bar from './nav-bar';
 
 export default function Home({ mainHeaderText}) {
   let {scrollYProgress} = useScroll();
-  let y = useTransform(scrollYProgress, [0,1], ["-25%", "50%"]);
+  let y = useTransform(scrollYProgress, [0,1], ["25%", "-80%"]);
 
   return (
     <>
@@ -34,12 +33,12 @@ export default function Home({ mainHeaderText}) {
 </Head>
 <main>
   
-    <Nav_Bar/>
+<Nav_Bar/>
   
   
   
   <div className="Show-Landscape">
-          <div className= {styles.mainheader} > <AnimatedTextWord text="Loft Maker London Ltd" /></div>
+          <div className= {styles.mainheader} > <AnimatedTextWord text="Loft Makers London Ltd" /></div>
           <Image 
               loading='lazy'
                 src= "/65.jpg"
@@ -51,7 +50,7 @@ export default function Home({ mainHeaderText}) {
               />
         </div>
         <div className="Show-portrait relative">
-        <div className= {styles.mainheader} > <AnimatedTextWord text="Loft Maker London Ltd" /></div>
+        <div className= {styles.mainheader} > <AnimatedTextWord text="Loft Makers London Ltd" /></div>
           <Image 
                 loading='lazy'
                   src= "/61.jpg"
@@ -96,6 +95,7 @@ export default function Home({ mainHeaderText}) {
       <i class="material-symbols-sharp closeIcon ">close</i>
     </button>
   </div>
+  <Image_slider/>
   <motion.div initial={{ opacity: 0 }} transition={{duration: 1.0}} whileInView={{ opacity: 1 }} className={styles.intro}>
     <br />
     <br />
@@ -139,6 +139,7 @@ export default function Home({ mainHeaderText}) {
             <li>Landscape Gardening</li>
             <li>and more</li>
           </ul>
+          
         </div>
       </div>
       </motion.div>
@@ -167,11 +168,25 @@ export default function Home({ mainHeaderText}) {
     <div className="Content">
       <div>
       
-      <Image className="Content-Image About_Image" loading='lazy' src="/DoorKnob.jpg" width={928} height={1160} blurDataURL="data:..." placeholder="blur" alt="finished loft exterior" style={{
+      <div className='overlapcontainer'>
+        <div className='OverLapping-Images'>
+        
+            <span>
+            <Image className='Content-Image ' loading='lazy' src="/DoorKnob.jpg" width={736} height={981} blurDataURL="data:..." placeholder="blur" alt="finished loft exterior" />
+          </span>
+            <motion.div style={{y}}>
+            <span className='Span-Margin-Left'>
+            <Image className="Show-1377 " loading='lazy' src="/DoorKnob.jpg" width={596} height={795} blurDataURL="data:..." placeholder="blur" alt="Tap" style={{
                   
                   width: 'auto ',
-                  height: '90vh',
+                  height: '45vh',
                 }} />
+          </span>
+            </motion.div>
+            
+            
+        </div>
+      </div>
        
       </div>
     </div>
@@ -228,4 +243,3 @@ export async function getServerSideProps() {
 
   return { props: { mainHeaderText, imageSrc } };
 }
-

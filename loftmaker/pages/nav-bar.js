@@ -10,6 +10,7 @@ import Link from 'next/link'
 export default function Nav_Bar({  }) {
     return(
         <main> <header className="nav-bar Show-Landscape">
+          <div className='nav-bar-block'>
         <ul>
           <li>
             <a className="menuItem-navbar" href="/">Home</a>
@@ -33,6 +34,7 @@ export default function Nav_Bar({  }) {
             </div>
           </li>
         </ul>
+        </div>
       </header> </main>
     )
    

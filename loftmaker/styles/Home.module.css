@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display&family=Ubuntu:wght@300&display=swap');
+
 .mainheader{
 	display: flex;
   flex-direction: row;
@@ -10,6 +12,10 @@
   margin-right: auto;
   z-index: 10;
   color: #fe5000;
+  font-family: 'Bebas Neue', sans-serif;
+  text-shadow: 0 0 6px #000; /* horizontal-offset vertical-offset 'blur' colour */
+  -moz-text-shadow: 0 0 2px #000;
+  -webkit-text-shadow: 0 0 2px #000;
   
   }
   
