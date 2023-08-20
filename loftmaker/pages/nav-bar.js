@@ -13,7 +13,7 @@ export default function Nav_Bar({  }) {
           <div className='nav-bar-block'>
         <ul>
           <li>
-            <a className="menuItem-navbar" href="/">Home</a>
+            <Link className="menuItem-navbar" href="/">Home</Link>
           </li>
           <motion.div whileHover={{scale: 1.01,
               transition: { duration: 1 },}}>
@@ -22,7 +22,7 @@ export default function Nav_Bar({  }) {
             </li>
           </motion.div>
           <li>
-            <a className="menuItem-navbar" href="/index.html#form-container">Contact </a>
+            <Link className="menuItem-navbar" scroll={false} href="#form_container">Contact </Link>
           </li>
           <li>
             <Image className='logo' loading='lazy' src={Logo} blurDataURL="data:..." automatically provided placeholder="blur" height={90} alt="Loft Maker London Ltd Logo" />

@@ -3,42 +3,41 @@ import EmblaCarousel from 'embla-carousel';
 import Image from 'next/image'
 
 
-import image1 from "../public/Current-project-images/1.jpg"
+
 import image2 from "../public/Current-project-images/2.jpg"
 import image3 from "../public/Current-project-images/3.jpg"
 import image4 from "../public/Current-project-images/4.jpg"
 import image5 from "../public/Current-project-images/5.jpg"
-import image6 from "../public/Current-project-images/6.jpg"
+
 import image7 from "../public/Current-project-images/7.jpg"
 import image8 from "../public/Current-project-images/8.jpg"
-import image9 from "../public/Current-project-images/9.jpg"
+
 import image10 from "../public/Current-project-images/10.jpg"
-import image11 from "../public/Current-project-images/11.jpg"
+
 import image12 from "../public/Current-project-images/12.jpg"
 import image13 from "../public/Current-project-images/13.jpg"
 import image14 from "../public/Current-project-images/14.jpg"
-import image15 from "../public/Current-project-images/15.jpg"
-import image16 from "../public/Current-project-images/16.jpg"
+
+
 import image17 from "../public/Current-project-images/17.jpg"
-import image18 from "../public/Current-project-images/18.jpg"
+
 import image19 from "../public/Current-project-images/19.jpg"
-import image20 from "../public/Current-project-images/20.jpg"
+
 import image21 from "../public/Current-project-images/21.jpg"
-import image22 from "../public/Current-project-images/22.jpg"
-import image23 from "../public/Current-project-images/23.jpg"
+
+
 import image24 from "../public/Current-project-images/24.jpg"
-import image25 from "../public/Current-project-images/25.jpg"
+
 import image26 from "../public/Current-project-images/26.jpg"
 import image27 from "../public/Current-project-images/27.jpg"
-import image28 from "../public/Current-project-images/28.jpg"
-import image29 from "../public/Current-project-images/29.jpg"
-import image30 from "../public/Current-project-images/30.jpg"
+
+
 import image31 from "../public/Current-project-images/31.jpg"
 import image32 from "../public/Current-project-images/32.jpg"
 import image33 from "../public/Current-project-images/33.jpg"
 import image34 from "../public/Current-project-images/34.jpg"
 import image35 from "../public/Current-project-images/35.jpg"
-import image36 from "../public/Current-project-images/36.jpg"
+
 
 
 export default function ImageSlider() {
@@ -70,19 +69,13 @@ export default function ImageSlider() {
           <div className="embla__viewport">
             <div className="embla__container">
            
-<div class="embla__slide">
-  <Image classname="embla__slide__img"  
-         src={image1} loading='lazy' blurDataURL="data:..." 
-         automatically provided placeholder="blur" style={{objectFit: "contain" ,height: "50vh;"}}
-         alt="Loft Makers London Ltd Photos"
-  />
-</div>
+
 
 
 <div class="embla__slide">
   <Image classname="embla__slide__img"  
          src={image2} loading='lazy' blurDataURL="data:..."
-         automatically provided placeholder="blur" style={{objectFit: "contain" ,height: "50vh;"}}
+         automatically provided placeholder="blur" style={{objectFit: "contain" ,height: "80vh;"}}
          alt="Loft Makers London Ltd Photos"
   />
 </div>
@@ -91,7 +84,7 @@ export default function ImageSlider() {
 <div class="embla__slide">
   <Image classname="embla__slide__img"
          src={image3} loading='lazy' blurDataURL="data:..."
-         automatically provided placeholder="blur" style={{objectFit: "contain" ,height: "50vh;"}}
+         automatically provided placeholder="blur" style={{objectFit: "contain" ,height: "80vh;"}}
          alt="Loft Makers London Ltd Photos"
   />
 </div>
@@ -100,7 +93,7 @@ export default function ImageSlider() {
 <div class="embla__slide">
   <Image classname="embla__slide__img"
          src={image4} loading='lazy' blurDataURL="data:..."
-         automatically provided placeholder="blur" style={{objectFit: "contain" ,height: "50vh;"}}
+         automatically provided placeholder="blur" style={{objectFit: "contain" ,height: "80vh;"}}
          alt="Loft Makers London Ltd Photos"
   />
 </div>
@@ -109,25 +102,17 @@ export default function ImageSlider() {
 <div class="embla__slide">
   <Image classname="embla__slide__img"
          src={image5} loading='lazy' blurDataURL="data:..."
-         automatically provided placeholder="blur" style={{objectFit: "contain" ,height: "50vh;"}}
+         automatically provided placeholder="blur" style={{objectFit: "contain" ,height: "80vh;"}}
          alt="Loft Makers London Ltd Photos"
   />
 </div>
 
-
-<div class="embla__slide">
-  <Image classname="embla__slide__img"
-         src={image6} loading='lazy' blurDataURL="data:..."
-         automatically provided placeholder="blur" style={{objectFit: "contain" ,height: "50vh;"}}
-         alt="Loft Makers London Ltd Photos"
-  />
-</div>
 
 
 <div class="embla__slide">
   <Image classname="embla__slide__img"
          src={image7} loading='lazy' blurDataURL="data:..."
-         automatically provided placeholder="blur" style={{objectFit: "contain" ,height: "50vh;"}}
+         automatically provided placeholder="blur" style={{objectFit: "contain" ,height: "80vh;"}}
          alt="Loft Makers London Ltd Photos"
   />
 </div>
@@ -136,43 +121,28 @@ export default function ImageSlider() {
 <div class="embla__slide">
   <Image classname="embla__slide__img"
          src={image8} loading='lazy' blurDataURL="data:..."
-         automatically provided placeholder="blur" style={{objectFit: "contain" ,height: "50vh;"}}
+         automatically provided placeholder="blur" style={{objectFit: "contain" ,height: "80vh;"}}
          alt="Loft Makers London Ltd Photos"
   />
 </div>
 
 
-<div class="embla__slide">
-  <Image classname="embla__slide__img"
-         src={image9} loading='lazy' blurDataURL="data:..."
-         automatically provided placeholder="blur" style={{objectFit: "contain" ,height: "50vh;"}}
-         alt="Loft Makers London Ltd Photos"
-  />
-</div>
 
 
 <div class="embla__slide">
   <Image classname="embla__slide__img"
          src={image10} loading='lazy' blurDataURL="data:..."
-         automatically provided placeholder="blur" style={{objectFit: "contain" ,height: "50vh;"}}
+         automatically provided placeholder="blur" style={{objectFit: "contain" ,height: "80vh;"}}
          alt="Loft Makers London Ltd Photos"
   />
 </div>
 
-
-<div class="embla__slide">
-  <Image classname="embla__slide__img"
-         src={image11} loading='lazy' blurDataURL="data:..."
-         automatically provided placeholder="blur" style={{objectFit: "contain" ,height: "50vh;"}}
-         alt="Loft Makers London Ltd Photos"
-  />
-</div>
 
 
 <div class="embla__slide">
   <Image classname="embla__slide__img"
          src={image12} loading='lazy' blurDataURL="data:..."
-         automatically provided placeholder="blur" style={{objectFit: "contain" ,height: "50vh;"}}
+         automatically provided placeholder="blur" style={{objectFit: "contain" ,height: "80vh;"}}
          alt="Loft Makers London Ltd Photos"
   />
 </div>
@@ -181,7 +151,7 @@ export default function ImageSlider() {
 <div class="embla__slide">
   <Image classname="embla__slide__img"
          src={image13} loading='lazy' blurDataURL="data:..."
-         automatically provided placeholder="blur" style={{objectFit: "contain" ,height: "50vh;"}}
+         automatically provided placeholder="blur" style={{objectFit: "contain" ,height: "80vh;"}}
          alt="Loft Makers London Ltd Photos"
   />
 </div>
@@ -190,88 +160,41 @@ export default function ImageSlider() {
 <div class="embla__slide">
   <Image classname="embla__slide__img"
          src={image14} loading='lazy' blurDataURL="data:..."
-         automatically provided placeholder="blur" style={{objectFit: "contain" ,height: "50vh;"}}
+         automatically provided placeholder="blur" style={{objectFit: "contain" ,height: "80vh;"}}
          alt="Loft Makers London Ltd Photos"
   />
 </div>
 
 
-<div class="embla__slide">
-  <Image classname="embla__slide__img"
-         src={image15} loading='lazy' blurDataURL="data:..."
-         automatically provided placeholder="blur" style={{objectFit: "contain" ,height: "50vh;"}}
-         alt="Loft Makers London Ltd Photos"
-  />
-</div>
 
-
-<div class="embla__slide">
-  <Image classname="embla__slide__img"
-         src={image16} loading='lazy' blurDataURL="data:..."
-         automatically provided placeholder="blur" style={{objectFit: "contain" ,height: "50vh;"}}
-         alt="Loft Makers London Ltd Photos"
-  />
-</div>
 
 
 <div class="embla__slide">
   <Image classname="embla__slide__img"
          src={image17} loading='lazy' blurDataURL="data:..."
-         automatically provided placeholder="blur" style={{objectFit: "contain" ,height: "50vh;"}}
+         automatically provided placeholder="blur" style={{objectFit: "contain" ,height: "80vh;"}}
          alt="Loft Makers London Ltd Photos"
   />
 </div>
 
 
-<div class="embla__slide">
-  <Image classname="embla__slide__img"
-         src={image18} loading='lazy' blurDataURL="data:..."
-         automatically provided placeholder="blur" style={{objectFit: "contain" ,height: "50vh;"}}
-         alt="Loft Makers London Ltd Photos"
-  />
-</div>
+
 
 
 <div class="embla__slide">
   <Image classname="embla__slide__img"
          src={image19} loading='lazy' blurDataURL="data:..."
-         automatically provided placeholder="blur" style={{objectFit: "contain" ,height: "50vh;"}}
+         automatically provided placeholder="blur" style={{objectFit: "contain" ,height: "80vh;"}}
          alt="Loft Makers London Ltd Photos"
   />
 </div>
 
-
-<div class="embla__slide">
-  <Image classname="embla__slide__img"
-         src={image20} loading='lazy' blurDataURL="data:..."
-         automatically provided placeholder="blur" style={{objectFit: "contain" ,height: "50vh;"}}
-         alt="Loft Makers London Ltd Photos"
-  />
-</div>
 
 
 <div class="embla__slide">
   <Image classname="embla__slide__img"
          src={image21} loading='lazy' blurDataURL="data:..."
-         automatically provided placeholder="blur" style={{objectFit: "contain" ,height: "50vh;"}}
-         alt="Loft Makers London Ltd Photos"
-  />
-</div>
-
-
-<div class="embla__slide">
-  <Image classname="embla__slide__img"
-         src={image22} loading='lazy' blurDataURL="data:..."
-         automatically provided placeholder="blur" style={{objectFit: "contain" ,height: "50vh;"}}
-         alt="Loft Makers London Ltd Photos"
-  />
-</div>
-
-
-<div class="embla__slide">
-  <Image classname="embla__slide__img"
-         src={image23} loading='lazy' blurDataURL="data:..."
-         automatically provided placeholder="blur" style={{objectFit: "contain" ,height: "50vh;"}}
+         automatically provided placeholder="blur" style={{objectFit: "contain" ,height: "80vh;"}}
          alt="Loft Makers London Ltd Photos"
   />
 </div>
@@ -280,25 +203,19 @@ export default function ImageSlider() {
 <div class="embla__slide">
   <Image classname="embla__slide__img"
          src={image24} loading='lazy' blurDataURL="data:..."
-         automatically provided placeholder="blur" style={{objectFit: "contain" ,height: "50vh;"}}
+         automatically provided placeholder="blur" style={{objectFit: "contain" ,height: "80vh;"}}
          alt="Loft Makers London Ltd Photos"
   />
 </div>
 
 
-<div class="embla__slide">
-  <Image classname="embla__slide__img"
-         src={image25} loading='lazy' blurDataURL="data:..."
-         automatically provided placeholder="blur" style={{objectFit: "contain" ,height: "50vh;"}}
-         alt="Loft Makers London Ltd Photos"
-  />
-</div>
+
 
 
 <div class="embla__slide">
   <Image classname="embla__slide__img"
          src={image26} loading='lazy' blurDataURL="data:..."
-         automatically provided placeholder="blur" style={{objectFit: "contain" ,height: "50vh;"}}
+         automatically provided placeholder="blur" style={{objectFit: "contain" ,height: "80vh;"}}
          alt="Loft Makers London Ltd Photos"
   />
 </div>
@@ -307,43 +224,17 @@ export default function ImageSlider() {
 <div class="embla__slide">
   <Image classname="embla__slide__img"
          src={image27} loading='lazy' blurDataURL="data:..."
-         automatically provided placeholder="blur" style={{objectFit: "contain" ,height: "50vh;"}}
+         automatically provided placeholder="blur" style={{objectFit: "contain" ,height: "80vh;"}}
          alt="Loft Makers London Ltd Photos"
   />
 </div>
 
-
-<div class="embla__slide">
-  <Image classname="embla__slide__img"
-         src={image28} loading='lazy' blurDataURL="data:..."
-         automatically provided placeholder="blur" style={{objectFit: "contain" ,height: "50vh;"}}
-         alt="Loft Makers London Ltd Photos"
-  />
-</div>
-
-
-<div class="embla__slide">
-  <Image classname="embla__slide__img"
-         src={image29} loading='lazy' blurDataURL="data:..."
-         automatically provided placeholder="blur" style={{objectFit: "contain" ,height: "50vh;"}}
-         alt="Loft Makers London Ltd Photos"
-  />
-</div>
-
-
-<div class="embla__slide">
-  <Image classname="embla__slide__img"
-         src={image30} loading='lazy' blurDataURL="data:..."
-         automatically provided placeholder="blur" style={{objectFit: "contain" ,height: "50vh;"}}
-         alt="Loft Makers London Ltd Photos"
-  />
-</div>
 
 
 <div class="embla__slide">
   <Image classname="embla__slide__img"
          src={image31} loading='lazy' blurDataURL="data:..."
-         automatically provided placeholder="blur" style={{objectFit: "contain" ,height: "50vh;"}}
+         automatically provided placeholder="blur" style={{objectFit: "contain" ,height: "80vh;"}}
          alt="Loft Makers London Ltd Photos"
   />
 </div>
@@ -352,7 +243,7 @@ export default function ImageSlider() {
 <div class="embla__slide">
   <Image classname="embla__slide__img"
          src={image32} loading='lazy' blurDataURL="data:..."
-         automatically provided placeholder="blur" style={{objectFit: "contain" ,height: "50vh;"}}
+         automatically provided placeholder="blur" style={{objectFit: "contain" ,height: "80vh;"}}
          alt="Loft Makers London Ltd Photos"
   />
 </div>
@@ -361,7 +252,7 @@ export default function ImageSlider() {
 <div class="embla__slide">
   <Image classname="embla__slide__img"
          src={image33} loading='lazy' blurDataURL="data:..."
-         automatically provided placeholder="blur" style={{objectFit: "contain" ,height: "50vh;"}}
+         automatically provided placeholder="blur" style={{objectFit: "contain" ,height: "80vh;"}}
          alt="Loft Makers London Ltd Photos"
   />
 </div>
@@ -370,7 +261,7 @@ export default function ImageSlider() {
 <div class="embla__slide">
   <Image classname="embla__slide__img"
          src={image34} loading='lazy' blurDataURL="data:..."
-         automatically provided placeholder="blur" style={{objectFit: "contain" ,height: "50vh;"}}
+         automatically provided placeholder="blur" style={{objectFit: "contain" ,height: "80vh;"}}
          alt="Loft Makers London Ltd Photos"
   />
 </div>
@@ -379,19 +270,13 @@ export default function ImageSlider() {
 <div class="embla__slide">
   <Image classname="embla__slide__img"
          src={image35} loading='lazy' blurDataURL="data:..."
-         automatically provided placeholder="blur" style={{objectFit: "contain" ,height: "50vh;"}}
+         automatically provided placeholder="blur" style={{objectFit: "contain" ,height: "80vh;"}}
          alt="Loft Makers London Ltd Photos"
   />
 </div>
 
 
-<div class="embla__slide">
-  <Image classname="embla__slide__img"
-         src={image36} loading='lazy' blurDataURL="data:..."
-         automatically provided placeholder="blur" style={{objectFit: "contain" ,height: "50vh;"}}
-         alt="Loft Makers London Ltd Photos"
-  />
-</div>
+
 
               </div>
             </div>

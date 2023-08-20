@@ -12,6 +12,8 @@ import AnimatedTextWord from "../Components/AnimatedTextWord";
 import styles from '@/styles/Home.module.css'
 import Nav_Bar from './nav-bar';
 
+import Contactform from '@/Components/contactform';
+
 
 
 
@@ -71,7 +73,7 @@ export default function Home({ mainHeaderText}) {
           <Link className="menuItem" href="/gallery.html">Gallery </Link>
         </li>
         <li>
-          <Link className="menuItem" href="/index.html#form-container">Contact</Link>
+          <Link className="menuItem" href="#form-container">Contact</Link>
         </li>
       </ul>
       <footer>
@@ -95,7 +97,7 @@ export default function Home({ mainHeaderText}) {
       <i class="material-symbols-sharp closeIcon ">close</i>
     </button>
   </div>
-  <Image_slider/>
+ 
   <motion.div initial={{ opacity: 0 }} transition={{duration: 1.0}} whileInView={{ opacity: 1 }} className={styles.intro}>
     <br />
     <br />
@@ -114,82 +116,91 @@ export default function Home({ mainHeaderText}) {
   </div>
 
     <div className=" flex_container">
-    <motion.div initial={{ opacity: 0 }} transition={{duration: 1.0}} whileInView={{ opacity: 1 }}>
-      <div className="Content">
-        <h1> Our Services</h1>
-        <p>From start to finish, we ensure that your loft conversion meets your desired requirements. With a focus on exceptional service and a high-quality finish, we take pride in our workmanship. <br />We offer a range of loft conversion options to suit any lifestyle and budget, recognizing that every home is unique. Whether you're looking for a simple conversion or a more complex project, our skilled team can bring your ideas to life. <br /> Our commitment to quality and customization guarantees a loft conversion or extension that is truly personalized for you. Contact us today to schedule an intial consultation and discover how Loft Makers can transform your home. </p>
-        <br />
-        <div className={styles.serviceList}>
-          <h1>Things we do : </h1>
-          <ul>
-            <li className={styles.first_list}>Planning Permission</li>
-            <li>Building Control</li>
-            <li>Scaffolding</li>
-            <li>Steel Installation</li>
-            <li>Structural Work including moving walls,ceilings,new roof, flat roofs, stair installation</li>
-            <li>Window, door, and velux installation</li>
-            <li>Full electrics with Certification</li>
-            <li>Full Plumbing with Certification</li>
-            <li>Demolition including chimney removal</li>
-            <li>Skip permits</li>
-            <li>Concreting</li>
-            <li>Bathrooms</li>
-            <li>Kitchens</li>
-            <li>Lighting</li>
-            <li>Landscape Gardening</li>
-            <li>and more</li>
-          </ul>
-          
-        </div>
-      </div>
-      </motion.div>
-      <div className='overlapcontainer'>
-        <div className='OverLapping-Images'>
-        
-            <span>
-            <Image className='Content-Image ' loading='lazy' src="/En2AL/Bathroom-1736X981.jpg" width={736} height={981} blurDataURL="data:..." placeholder="blur" alt="finished loft exterior" />
-          </span>
-            <motion.div style={{y}}>
-            <span className='Span-margin'>
-            <Image className="Show-1377 " loading='lazy' src="/En2AL/Tap981.jpg" width={596} height={795} blurDataURL="data:..." placeholder="blur" alt="Tap" style={{
+     
+        <div className="Content">
+            <motion.div initial={{ opacity: 0 }} transition={{duration: 1.0}} whileInView={{ opacity: 1 }}>
+              
+                  <h1> Our Services</h1>
+                  <p>From start to finish, we ensure that your loft conversion meets your desired requirements. With a focus on exceptional service and a high-quality finish, we take pride in our workmanship. <br />We offer a range of loft conversion options to suit any lifestyle and budget, recognizing that every home is unique. Whether you're looking for a simple conversion or a more complex project, our skilled team can bring your ideas to life. <br /> Our commitment to quality and customization guarantees a loft conversion or extension that is truly personalized for you. Contact us today to schedule an intial consultation and discover how Loft Makers can transform your home. </p>
+                  <br />
+                    <div className={styles.serviceList}>
+                      <h1>Things we do : </h1>
+                      <ul>
+                        <li className={styles.first_list}>Planning Permission</li>
+                        <li>Building Control</li>
+                        <li>Scaffolding</li>
+                        <li>Steel Installation</li>
+                        <li>Structural Work including moving walls,ceilings,new roof, flat roofs, stair installation</li>
+                        <li>Window, door, and velux installation</li>
+                        <li>Full electrics with Certification</li>
+                        <li>Full Plumbing with Certification</li>
+                        <li>Demolition including chimney removal</li>
+                        <li>Skip permits</li>
+                        <li>Concreting</li>
+                        <li>Bathrooms</li>
+                        <li>Kitchens</li>
+                        <li>Lighting</li>
+                        <li>Landscape Gardening</li>
+                        <li>and more</li>
+                      </ul>
+                    </div>
                   
-                  width: 'auto ',
-                  height: '45vh',
-                }} />
-          </span>
+                
             </motion.div>
-            
-            
         </div>
-      </div>
+       
+        <div className='Content'>
+            <div className='overlapcontainer'>
+              <div className='OverLapping-Images'>  <span>
+                  <Image className='Content-Image ' loading='lazy' src="/En2AL/Bathroom-1736X981.jpg" width={736} height={981} blurDataURL="data:..." placeholder="blur" alt="finished loft exterior" />
+                </span>
+                  <motion.div style={{y}}>
+                  <span className='Span-margin'>
+                  <Image className="Show-1377 " loading='lazy' src="/En2AL/Tap981.jpg" width={596} height={795} blurDataURL="data:..." placeholder="blur" alt="Tap" style={{
+                        
+                        width: 'auto ',
+                        height: '45vh',
+                      }} />
+                </span>
+                  </motion.div> </div>
+              </div>
+              
+              
+                  
+         
+        </div>
+        
+
     </div>
+      
+ 
  
   <div className="flex_container">
     <div className="Content">
-      <div>
       
-      <div className='overlapcontainer'>
-        <div className='OverLapping-Images'>
-        
+      
+        <div className='overlapcontainer'>
+          <div className='OverLapping-Images'>
             <span>
-            <Image className='Content-Image ' loading='lazy' src="/DoorKnob.jpg" width={736} height={981} blurDataURL="data:..." placeholder="blur" alt="finished loft exterior" />
-          </span>
-            <motion.div style={{y}}>
-            <span className='Span-Margin-Left'>
-            <Image className="Show-1377 " loading='lazy' src="/DoorKnob.jpg" width={596} height={795} blurDataURL="data:..." placeholder="blur" alt="Tap" style={{
-                  
-                  width: 'auto ',
-                  height: '45vh',
-                }} />
-          </span>
+              <Image className='Content-Image2 ' loading='lazy' src="/DoorKnob.jpg" width={736} height={981} blurDataURL="data:..." placeholder="blur" alt="finished loft exterior" />
+            </span>
+              <motion.div style={{y}}>
+              <span className='Span-Margin-Left'>
+              <Image className="Show-1377 " loading='lazy' src="/DoorKnob.jpg" width={596} height={795} blurDataURL="data:..." placeholder="blur" alt="Tap" style={{
+                    
+                    width: 'auto ',
+                    height: '45vh',
+                  }} />
+            </span>
             </motion.div>
-            
-            
+
+              
+          </div>
         </div>
-      </div>
-       
-      </div>
-    </div>
+
+
+   </div>
+    <div className="Content">
     <motion.div initial={{ opacity: 0 }} transition={{duration: 1.0}} whileInView={{ opacity: 1 }} className={styles.About_Content}>
       <h1> About </h1>
       <br />
@@ -199,7 +210,13 @@ export default function Home({ mainHeaderText}) {
         <br /> With Loftmaker London, you can trust that your home renovation will be handled with utmost professionalism and attention to detail.
       </p>
     </motion.div>
-  </div>
+    </div>
+
+  </div>      
+  
+  <div> <Image_slider/></div>
+
+  
   <motion.div initial={{ opacity: 0 }} transition={{duration: 1.0}} whileInView={{ opacity: 1 }} className="Content-2">
     <h1> Lofts </h1>
     <p>At Loft Maker, loft conversions are not just a service we provide; they are our unwavering passion and the cornerstone of our expertise. With over two decades of experience in the industry, we have firmly established ourselves as the go-to experts for transforming unused attics into stunning and highly functional living spaces. <br />
@@ -218,6 +235,7 @@ export default function Home({ mainHeaderText}) {
     </p>
   </motion.div>
   <div></div>
+  <Contactform/>
   <footer>
     <div className="Footer-Flex">
       <div className="column-Footer-Flex">
