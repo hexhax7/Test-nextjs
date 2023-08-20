@@ -141,7 +141,7 @@ export default function Home({ mainHeaderText}) {
                         <li>Kitchens</li>
                         <li>Lighting</li>
                         <li>Landscape Gardening</li>
-                        <li>and more</li>
+                        <li>and more!</li>
                       </ul>
                     </div>
                   
