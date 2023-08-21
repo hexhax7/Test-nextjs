@@ -115,7 +115,7 @@ export default function Home({ mainHeaderText}) {
     </ul>
   </div>
 
-    <div className=" flex_container">
+    <div className=" flex_container ">
      
         <div className="Content">
             <motion.div initial={{ opacity: 0 }} transition={{duration: 1.0}} whileInView={{ opacity: 1 }}>
@@ -124,25 +124,29 @@ export default function Home({ mainHeaderText}) {
                   <p>From start to finish, we ensure that your loft conversion meets your desired requirements. With a focus on exceptional service and a high-quality finish, we take pride in our workmanship. <br />We offer a range of loft conversion options to suit any lifestyle and budget, recognizing that every home is unique. Whether you're looking for a simple conversion or a more complex project, our skilled team can bring your ideas to life. <br /> Our commitment to quality and customization guarantees a loft conversion or extension that is truly personalized for you. Contact us today to schedule an intial consultation and discover how Loft Makers can transform your home. </p>
                   <br />
                     <div className={styles.serviceList}>
-                      <h1>Things we do : </h1>
+                      <h1>Things we do: </h1>
+                      
                       <ul>
-                        <li className={styles.first_list}>Planning Permission</li>
-                        <li>Building Control</li>
-                        <li>Scaffolding</li>
-                        <li>Steel Installation</li>
-                        <li>Structural Work including moving walls,ceilings,new roof, flat roofs, stair installation</li>
-                        <li>Window, door, and velux installation</li>
-                        <li>Full electrics with Certification</li>
-                        <li>Full Plumbing with Certification</li>
-                        <li>Demolition including chimney removal</li>
-                        <li>Skip permits</li>
-                        <li>Concreting</li>
-                        <li>Bathrooms</li>
-                        <li>Kitchens</li>
-                        <li>Lighting</li>
-                        <li>Landscape Gardening</li>
-                        <li>and more!</li>
-                      </ul>
+                      
+                      <li className={styles.first_list}>Planning Permission</li>
+                      <li>Building Control</li>
+                      <li>Scaffolding</li>
+                      <li>Steel Installation</li>
+                      <li>Structural Work including moving walls,ceilings,new roof, flat roofs, stair installation</li>
+                      <li>Window, door, and velux installation</li>
+                      <li>Full electrics with Certification</li>
+                      <li>Full Plumbing with Certification</li>
+                      <li>Demolition including chimney removal</li>
+                      <li>Skip permits</li>
+                      <li>Concreting</li>
+                      <li>Bathrooms</li>
+                      <li>Kitchens</li>
+                      <li>Lighting</li>
+                      <li>Landscape Gardening</li>
+                      <li>and more!</li>
+                    </ul>
+                      
+                      
                     </div>
                   
                 
@@ -154,7 +158,7 @@ export default function Home({ mainHeaderText}) {
               <div className='OverLapping-Images'>  <span>
                   <Image className='Content-Image ' loading='lazy' src="/En2AL/Bathroom-1736X981.jpg" width={736} height={981} blurDataURL="data:..." placeholder="blur" alt="finished loft exterior" />
                 </span>
-                  <motion.div style={{y}}>
+                  <motion.div style={{y}} className='hidden'>
                   <span className='Span-margin'>
                   <Image className="Show-1377 " loading='lazy' src="/En2AL/Tap981.jpg" width={596} height={795} blurDataURL="data:..." placeholder="blur" alt="Tap" style={{
                         
@@ -164,10 +168,7 @@ export default function Home({ mainHeaderText}) {
                 </span>
                   </motion.div> </div>
               </div>
-              
-              
-                  
-         
+
         </div>
         
 
@@ -175,14 +176,14 @@ export default function Home({ mainHeaderText}) {
       
  
  
-  <div className="flex_container">
-    <div className="Content">
+  <div className="flex_container margin_top" >
+    <div className="Content hidden">
       
       
         <div className='overlapcontainer'>
           <div className='OverLapping-Images'>
             <span>
-              <Image className='Content-Image2 ' loading='lazy' src="/DoorKnob.jpg" width={736} height={981} blurDataURL="data:..." placeholder="blur" alt="finished loft exterior" />
+              <Image className='Content-Image ' loading='lazy' src="/DoorKnob.jpg" width={736} height={981} blurDataURL="data:..." placeholder="blur" alt="finished loft exterior" />
             </span>
               <motion.div style={{y}}>
               <span className='Span-Margin-Left'>
@@ -203,8 +204,7 @@ export default function Home({ mainHeaderText}) {
     <div className="Content">
     <motion.div initial={{ opacity: 0 }} transition={{duration: 1.0}} whileInView={{ opacity: 1 }} className={styles.About_Content}>
       <h1> About </h1>
-      <br />
-      <br />
+      
       <p> With over 20 years of expeiance transforming homes in london , Our team is committed to delivering exceptional renovations and extensions, fueled by our deep knowledge and expertise. We are driven by a passion for design, constantly seeking out innovative solutions to create unique spaces. <br />
         <br /> At Loftmaker London, we understand the challenges that can arise during a renovation project. However, we are well-prepared to overcome any obstacles that may come our way. Our goal is to ensure that your project stays within budget and is completed on schedule. We work closely with architects, building control, structural engineers, and planning departments, or can operate independently, to ensure that our results align perfectly with your vision. <br />
         <br /> With Loftmaker London, you can trust that your home renovation will be handled with utmost professionalism and attention to detail.
@@ -212,9 +212,10 @@ export default function Home({ mainHeaderText}) {
     </motion.div>
     </div>
 
-  </div>      
+
+  </div>  
   
-  <div> <Image_slider/></div>
+  <div className='image-slide-div'> <Image_slider/></div>
 
   
   <motion.div initial={{ opacity: 0 }} transition={{duration: 1.0}} whileInView={{ opacity: 1 }} className="Content-2">
