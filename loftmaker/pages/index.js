@@ -21,7 +21,7 @@ import Contactform from '@/Components/contactform';
 
 export default function Home({ mainHeaderText}) {
   let {scrollYProgress} = useScroll();
-  let y = useTransform(scrollYProgress, [0,1], ["25%", "-80%"]);
+  let y = useTransform(scrollYProgress, [0,1], ["40%", "-180%"]);
 
   return (
     <>
@@ -183,7 +183,7 @@ export default function Home({ mainHeaderText}) {
         <div className='overlapcontainer'>
           <div className='OverLapping-Images'>
             <span>
-              <Image className='Content-Image ' loading='lazy' src="/DoorKnob.jpg" width={736} height={981} blurDataURL="data:..." placeholder="blur" alt="finished loft exterior" />
+              <Image className='Content-Image ' loading='lazy' src="/66.jpg" width={736} height={981} blurDataURL="data:..." placeholder="blur" alt="finished loft exterior" />
             </span>
               <motion.div style={{y}}>
               <span className='Span-Margin-Left'>

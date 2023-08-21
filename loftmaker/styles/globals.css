@@ -109,8 +109,12 @@ a {
   
   text-align: center;
 }
+
 p{
-  font-size: x-large;
+  font-size: 1.5rem;
+}
+ul{
+  font-size: 1.5rem;
 }
 .flex_container{
   display: flex;
@@ -316,6 +320,8 @@ p{
 	width: 40%;
 }
 
+
+
 .menuItem {
 	display: block;
 	margin: 4rem 4rem;
@@ -359,6 +365,12 @@ p{
 	z-index: 100;
 	width: 30%;
 }
+@media (orientation: portrait) and (max-width: 800px) {
+  .showMenu {
+    transform: translateX(0);
+    z-index: 100;
+    width: 100%;
+  }}
 
 .nav-bar-block{
 	
