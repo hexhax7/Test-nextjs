@@ -120,6 +120,7 @@ ul{
   display: flex;
   height: 120vh;
   
+  
 	
   margin: 0;
   padding: 0;
@@ -141,6 +142,9 @@ ul{
  
   width: 50%;
   margin-top: 5%;
+  flex-grow: 5;
+  overflow: hidden;
+
   
 
 }
@@ -225,6 +229,8 @@ ul{
   .flex_container {
     flex-direction: column;
     min-height: 0;
+    flex-grow: 3;
+    overflow: auto;
   }
 
  
@@ -358,12 +364,15 @@ ul{
 	font-size: 48px;
 }
 
-
+.height{
+  height: 65vh;
+}
 
 .showMenu {
 	transform: translateX(0);
 	z-index: 100;
 	width: 30%;
+  
 }
 @media (orientation: portrait) and (max-width: 800px) {
   .showMenu {

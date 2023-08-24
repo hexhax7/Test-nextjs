@@ -65,6 +65,7 @@ export default function Home({ mainHeaderText}) {
         </div>
   <div className="Show-portrait">
     <div className="menu">
+      <div className='height'>
       <ul>
         <li>
           <Link className="menuItem" href="/index.html">Home</Link>
@@ -76,6 +77,8 @@ export default function Home({ mainHeaderText}) {
           <Link className="menuItem" href="#form-container">Contact</Link>
         </li>
       </ul>
+      </div>
+      
       <footer>
         <div className="Footer-Flex">
           <div className="column-Footer-Flex">
@@ -202,7 +205,7 @@ export default function Home({ mainHeaderText}) {
 
    </div>
     <div className="Content">
-    <motion.div initial={{ opacity: 0 }} transition={{duration: 1.0}} whileInView={{ opacity: 1 }} className={styles.About_Content}>
+    <motion.div initial={{ opacity: 0 }} transition={{duration: 1.0}} whileInView={{ opacity: 1 }} >
       <h1> About </h1>
       
       <p> With over 20 years of expeiance transforming homes in london , Our team is committed to delivering exceptional renovations and extensions, fueled by our deep knowledge and expertise. We are driven by a passion for design, constantly seeking out innovative solutions to create unique spaces. <br />
