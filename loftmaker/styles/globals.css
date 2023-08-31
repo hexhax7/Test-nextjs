@@ -82,12 +82,16 @@
 
 html,
 body {
-  
   max-width: 100vw;
   overflow-x: hidden;
- 
-  
 }
+
+@media (orientation: portrait) and (max-width: 800px) {
+  section{
+    margin: 3%;
+  }
+}
+
 
 h1{
   font-size: 2rem;
@@ -118,42 +122,38 @@ ul{
 }
 .flex_container{
   display: flex;
-  height: 120vh;
   
-  
-	
-  margin: 0;
-  padding: 0;
-  width: 100%;
- 
-}
+  }
 
 .image-slide-div{
   height: 100vh;
-  
   margin: 5%;
 }
 
+@media (orientation: portrait) and (max-width: 800px) {
+  .image-slide-div{
+    height: 75vh;
+    margin: 5%;
+  }
+}
 .Content h1{
 	margin-left: 10%;
 }
+
 .Content{
-  flex: 1 0 auto;
- 
+  flex: 1 0 auto; 
   width: 50%;
   margin-top: 5%;
   flex-grow: 5;
   overflow: hidden;
-
-  
-
 }
+
 .overlapcontainer{
   position: relative;
-  height: 55vw;
+  height: 100vh;
   padding: 10px;
-  
 }
+
 .OverLapping-Images{
   display: grid;
   grid-template-areas: overlay;
@@ -186,7 +186,6 @@ ul{
 	position: relative;
 	margin-top: 5%;
   width: 70%;
-	
   min-width: 300px;
 	left: 10%;
   
@@ -205,6 +204,7 @@ ul{
   display: block;
   
  }
+
 @media (orientation: portrait) and (max-width: 800px) {
 
   .Content p{
@@ -228,9 +228,10 @@ ul{
 
   .flex_container {
     flex-direction: column;
-    min-height: 0;
-    flex-grow: 3;
+    flex-grow: 5;
     overflow: auto;
+    
+    
   }
 
  
@@ -241,8 +242,11 @@ ul{
  
    right: 1.2%;
    max-width: 99vw;
-   height: auto;   
    
+   
+  }
+  .oppo-hidden{
+    display: block;
   }
   .hidden{
     display: none;
@@ -255,9 +259,7 @@ ul{
     
     margin: 0%;
 }
-.margin_top{
-  margin-top: 795px;
-}
+
 
 }
 
@@ -663,7 +665,7 @@ textarea {
 	box-shadow: inset 0 0 0 2px #fe5000;
 }
 textarea {
-	height: 300px;
+	height: 200px;
 }
 
 img{
@@ -692,20 +694,34 @@ button[type="submit"]:hover {
 
 /* Style for the form container */
 #form_container {
+  
 	background-image: url(/43.jpg);
 	background-size: cover;
 	background-position: center center;
 	background-color: transparent;
 	color: #fe5000;
 	margin: 0;
-    height: 92vh;
+  max-height: 90vh;
 	width: 90%;
 	left: 5%;
 	position: relative;
 	font-family: 'Noto Sans', sans-serif;
 	font-weight: 300;
-	margin-top: 5%;
+	margin-top: 10%;
 	margin-bottom: 15%;
 	padding: 1%;
 }
 
+.Gallery_FlexBox{
+  padding-top: 10%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 80%;
+  margin-left: 10%;
+}
+
+.Gallery_FlexBox_image{
+  margin-top: 5%;
+}

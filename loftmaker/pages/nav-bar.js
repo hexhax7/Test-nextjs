@@ -2,7 +2,7 @@
 import Image from 'next/image'
 
 import React from 'react';
-import { motion } from 'framer-motion';
+
 import Logo from "../public/3.png"
 import Link from 'next/link'
 
@@ -15,14 +15,9 @@ export default function Nav_Bar({  }) {
           <li>
             <Link className="menuItem-navbar" href="/">Home</Link>
           </li>
-          <motion.div whileHover={{scale: 1.01,
-              transition: { duration: 1 },}}>
-            <li>
-              <Link className="menuItem-navbar" href="/gallery">Gallery</Link>
-            </li>
-          </motion.div>
+          
           <li>
-            <Link className="menuItem-navbar" scroll={false} href="#form_container">Contact </Link>
+            <Link className="menuItem-navbar" scroll={false} href="/#form_container">Contact </Link>
           </li>
           <li>
             <Image className='logo' loading='lazy' src={Logo} blurDataURL="data:..." automatically provided placeholder="blur" height={90} alt="Loft Maker London Ltd Logo" />

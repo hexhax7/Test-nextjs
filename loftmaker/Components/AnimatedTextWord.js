@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import styles from '@/styles/Home.module.css'
-import { Content } from "next/font/google";
+
 
 const AnimatedTextWord = ({ text }) => {
   const words = text.split(" ");

@@ -1,16 +1,17 @@
-"use client"
 
 import Head from 'next/head'
 import Image from 'next/image'
-import MenuComponent from '../Components/MenuComponents';
+
 import React from 'react';
 import Image_slider from '@/Components/ImageSlider';
 import { motion, useScroll , useTransform} from 'framer-motion';
-import Logo from "../public/3.png"
+
 import Link from 'next/link'
 import AnimatedTextWord from "../Components/AnimatedTextWord";
 import styles from '@/styles/Home.module.css'
 import Nav_Bar from './nav-bar';
+import Menu from './Menu'
+import Footer from './Footer'
 
 import Contactform from '@/Components/contactform';
 
@@ -36,6 +37,7 @@ export default function Home({ mainHeaderText}) {
 <main>
   
 <Nav_Bar/>
+<Menu/>
   
   
   
@@ -63,43 +65,7 @@ export default function Home({ mainHeaderText}) {
                   alt="Bathroom Photo"
                 />
         </div>
-  <div className="Show-portrait">
-    <div className="menu">
-      <div className='height'>
-      <ul>
-        <li>
-          <Link className="menuItem" href="/index.html">Home</Link>
-        </li>
-        <li>
-          <Link className="menuItem" href="/gallery.html">Gallery </Link>
-        </li>
-        <li>
-          <Link className="menuItem" href="#form-container">Contact</Link>
-        </li>
-      </ul>
-      </div>
-      
-      <footer>
-        <div className="Footer-Flex">
-          <div className="column-Footer-Flex">
-            <Link className="callLogo" href="tel:+"> T: +447469434317</Link>
-            <Link className="mailLogo" href="mailto:info@lml.ltd"> E: info@lml.ltd</Link>
-          </div>
-          <Link className="BottomLogo" href="/index.html">
-          <Image loading='lazy' src={Logo} blurDataURL="data:..." automatically provided placeholder="blur" width={100} alt="finished loft exterior" />
-          </Link>
-          <Link class="instaLogo" href="https://www.instagram.com/loftmakerlondon/">
-          <Image loading='lazy' src="/instagram.png" width={50} height={50} blurDataURL="data:..." placeholder="blur" alt="Instagram Logo" />
-          </Link>
-        </div>
-      </footer>
-      <MenuComponent />
-    </div>
-    <button class="hamburger">
-      <i class="menuIcon material-symbols-sharp">menu</i>
-      <i class="material-symbols-sharp closeIcon ">close</i>
-    </button>
-  </div>
+  
  
   <motion.div initial={{ opacity: 0 }} transition={{duration: 1.0}} whileInView={{ opacity: 1 }} className={styles.intro}>
     <br />
@@ -118,9 +84,9 @@ export default function Home({ mainHeaderText}) {
     </ul>
   </div>
 
-    <div className=" flex_container ">
+    <section className=" flex_container ">
      
-        <div className="Content">
+        <section className="Content">
             <motion.div initial={{ opacity: 0 }} transition={{duration: 1.0}} whileInView={{ opacity: 1 }}>
               
                   <h1> Our Services</h1>
@@ -154,9 +120,9 @@ export default function Home({ mainHeaderText}) {
                   
                 
             </motion.div>
-        </div>
+        </section>
        
-        <div className='Content'>
+        <div className='Content hidden'>
             <div className='overlapcontainer'>
               <div className='OverLapping-Images'>  <span>
                   <Image className='Content-Image ' loading='lazy' src="/En2AL/Bathroom-1736X981.jpg" width={736} height={981} blurDataURL="data:..." placeholder="blur" alt="finished loft exterior" />
@@ -175,26 +141,27 @@ export default function Home({ mainHeaderText}) {
         </div>
         
 
-    </div>
+    </section>
       
  
  
-  <div className="flex_container margin_top" >
-    <div className="Content hidden">
+  <section className="flex_container" >
+    <section className="Content">
+    
+        
       
-      
-        <div className='overlapcontainer'>
+        <div className='overlapcontainer oppo-hidden'>
           <div className='OverLapping-Images'>
             <span>
               <Image className='Content-Image ' loading='lazy' src="/66.jpg" width={736} height={981} blurDataURL="data:..." placeholder="blur" alt="finished loft exterior" />
             </span>
               <motion.div style={{y}}>
-              <span className='Span-Margin-Left'>
-              <Image className="Show-1377 " loading='lazy' src="/DoorKnob.jpg" width={596} height={795} blurDataURL="data:..." placeholder="blur" alt="Tap" style={{
-                    
-                    width: 'auto ',
-                    height: '45vh',
-                  }} />
+              <span className='Span-Margin-Left hidden'>
+              <Image className='Content-Image ' loading='lazy' src="/Doorknob.jpg" width={736} height={981} blurDataURL="data:..." placeholder="blur" alt="finished loft exterior"style={{
+                        
+                        width: 'auto ',
+                        height: '45vh',
+                      }} />
             </span>
             </motion.div>
 
@@ -203,8 +170,8 @@ export default function Home({ mainHeaderText}) {
         </div>
 
 
-   </div>
-    <div className="Content">
+   </section>
+    <section className="Content">
     <motion.div initial={{ opacity: 0 }} transition={{duration: 1.0}} whileInView={{ opacity: 1 }} >
       <h1> About </h1>
       
@@ -213,10 +180,10 @@ export default function Home({ mainHeaderText}) {
         <br /> With Loftmaker London, you can trust that your home renovation will be handled with utmost professionalism and attention to detail.
       </p>
     </motion.div>
-    </div>
+    </section>
 
 
-  </div>  
+  </section>  
   
   <div className='image-slide-div'> <Image_slider/></div>
 
@@ -240,20 +207,7 @@ export default function Home({ mainHeaderText}) {
   </motion.div>
   <div></div>
   <Contactform/>
-  <footer>
-    <div className="Footer-Flex">
-      <div className="column-Footer-Flex">
-        <Link className="callLogo" href="tel:+"> T: +447469434317</Link>
-        <Link href="mailto:info@lml.ltd"> E: info@lml.ltd</Link>
-      </div>
-      <Link className="BottomLogo" href="/index.html">
-      <Image loading='lazy' src={Logo} width={100} height={100} blurDataURL="data:..." placeholder="blur" alt="finished loft exterior" />
-      </Link>
-      <Link href="https://www.instagram.com/loftmakerlondon/">
-      <Image loading='lazy' src="/instagram.png" width={50} height={50} blurDataURL="data:..." placeholder="blur" alt="Instagram Logo" />
-      </Link>
-    </div>
-  </footer>
+  <Footer/>
       
       </main>
     </>
