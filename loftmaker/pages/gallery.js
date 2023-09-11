@@ -29,10 +29,7 @@ export default function Home({ mainHeaderText}) {
       <section className='Gallery_FlexBox'>
       <Image className="Gallery_FlexBox_image" loading="lazy" src="/Gallery/1.jpg" width="596" height="795" blurDataURL="data:..." placeholder="blur" alt="Loft Maker London Ltd Image1 " />
         <Image className="Gallery_FlexBox_image" loading="lazy" src="/Gallery/2.jpg" width="596" height="795" blurDataURL="data:..." placeholder="blur" alt="Loft Maker London Ltd Image2 " />
-        <Image className="Gallery_FlexBox_image" loading="lazy" src="/Gallery/3.jpg" width="596" height="795" blurDataURL="data:..." placeholder="blur" alt="Loft Maker London Ltd Image3 " />
         <Image className="Gallery_FlexBox_image" loading="lazy" src="/Gallery/4.jpg" width="596" height="795" blurDataURL="data:..." placeholder="blur" alt="Loft Maker London Ltd Image4 " />
-        <Image className="Gallery_FlexBox_image" loading="lazy" src="/Gallery/5.jpg" width="596" height="795" blurDataURL="data:..." placeholder="blur" alt="Loft Maker London Ltd Image5 " />
-        <Image className="Gallery_FlexBox_image" loading="lazy" src="/Gallery/6.jpg" width="596" height="795" blurDataURL="data:..." placeholder="blur" alt="Loft Maker London Ltd Image6 " />
         <Image className="Gallery_FlexBox_image" loading="lazy" src="/Gallery/7.jpg" width="596" height="795" blurDataURL="data:..." placeholder="blur" alt="Loft Maker London Ltd Image7 " />
         <Image className="Gallery_FlexBox_image" loading="lazy" src="/Gallery/8.jpg" width="596" height="795" blurDataURL="data:..." placeholder="blur" alt="Loft Maker London Ltd Image8 " />
         <Image className="Gallery_FlexBox_image" loading="lazy" src="/Gallery/9.jpg" width="596" height="795" blurDataURL="data:..." placeholder="blur" alt="Loft Maker London Ltd Image9 " />

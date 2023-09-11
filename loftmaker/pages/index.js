@@ -153,11 +153,11 @@ export default function Home({ mainHeaderText}) {
         <div className='overlapcontainer oppo-hidden'>
           <div className='OverLapping-Images'>
             <span>
-              <Image className='Content-Image ' loading='lazy' src="/66.jpg" width={736} height={981} blurDataURL="data:..." placeholder="blur" alt="finished loft exterior" />
+              <Image className='Content-Image ' loading='lazy' src="/66.jpg" width={736} height={981} blurDataURL="data:..." placeholder="blur" alt="LoftMakerLondon" />
             </span>
               <motion.div style={{y}}>
               <span className='Span-Margin-Left hidden'>
-              <Image className='Content-Image ' loading='lazy' src="/Doorknob.jpg" width={736} height={981} blurDataURL="data:..." placeholder="blur" alt="finished loft exterior"style={{
+              <Image className='Content-Image ' loading='lazy' src="/Doorknob.jpg" width={736} height={981} blurDataURL="data:..." placeholder="blur" alt="DoorKnob"style={{
                         
                         width: 'auto ',
                         height: '45vh',
