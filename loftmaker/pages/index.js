@@ -157,7 +157,7 @@ export default function Home({ mainHeaderText}) {
             </span>
               <motion.div style={{y}}>
               <span className='Span-Margin-Left hidden'>
-              <Image className='Content-Image ' loading='lazy' src="/Doorknob.jpg" width={736} height={981} blurDataURL="data:..." placeholder="blur" alt="DoorKnob"style={{
+              <Image className='Content-Image ' loading='lazy' src="/72.jpg" width={736} height={981} blurDataURL="data:..." placeholder="blur" alt="DoorKnob"style={{
                         
                         width: 'auto ',
                         height: '45vh',
@@ -215,7 +215,7 @@ export default function Home({ mainHeaderText}) {
 }
 export async function getServerSideProps() {
   const mainHeaderText = 'Loft Maker London Ltd'; // Fetch this from an API or database
-  const imageSrc = '/DoorKnob.jpg'; // Fetch the image URL from an API or database
+  
 
-  return { props: { mainHeaderText, imageSrc } };
+  return { props: { mainHeaderText} };
 }
