@@ -15,7 +15,9 @@ export default function Nav_Bar({  }) {
           <li>
             <Link className="menuItem-navbar" href="/">Home</Link>
           </li>
-          
+          <li>
+            <Link className="menuItem-navbar" href="/gallery">Gallery</Link>
+          </li>
           <li>
             <Link className="menuItem-navbar" scroll={false} href="/#form_container">Contact </Link>
           </li>

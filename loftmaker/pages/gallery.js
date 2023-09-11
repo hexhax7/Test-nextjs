@@ -27,52 +27,66 @@ export default function Home({ mainHeaderText}) {
 
 
       <section className='Gallery_FlexBox'>
-          <Image className='Gallery_FlexBox_image'  loading='lazy' src="/En2AL/Tap981.jpg" width={596} height={795} blurDataURL="data:..." placeholder="blur" alt="Tap" style={{
-                            
-                            width: 'auto ',
-                            height: '45vh',
-                          }} />
-          <Image className='Gallery_FlexBox_image'  loading='lazy' src="/En2AL/Tap981.jpg" width={596} height={795} blurDataURL="data:..." placeholder="blur" alt="Tap" style={{
-                            
-                            width: 'auto ',
-                            height: '45vh',
-                          }} />
-
-            <Image className='Gallery_FlexBox_image'  loading='lazy' src="/En2AL/Tap981.jpg" width={596} height={795} blurDataURL="data:..." placeholder="blur" alt="Tap" style={{
-                                    
-                                    width: 'auto ',
-                                    height: '45vh',
-                                  }} />
-
-            <Image className='Gallery_FlexBox_image'  loading='lazy' src="/En2AL/Tap981.jpg" width={596} height={795} blurDataURL="data:..." placeholder="blur" alt="Tap" style={{
-                                                
-                                                width: 'auto ',
-                                                height: '45vh',
-                                              }} />
-            <Image className='Gallery_FlexBox_image'  loading='lazy' src="/En2AL/Tap981.jpg" width={596} height={795} blurDataURL="data:..." placeholder="blur" alt="Tap" style={{
-                                                
-                                                width: 'auto ',
-                                                height: '45vh',
-                                              }} />
-
-<Image className='Gallery_FlexBox_image'  loading='lazy' src="/En2AL/Tap981.jpg" width={596} height={795} blurDataURL="data:..." placeholder="blur" alt="Tap" style={{
-                            
-                            width: 'auto ',
-                            height: '45vh',
-                          }} />
-          <Image className='Gallery_FlexBox_image'  loading='lazy' src="/En2AL/Tap981.jpg" width={596} height={795} blurDataURL="data:..." placeholder="blur" alt="Tap" style={{
-                            
-                            width: 'auto ',
-                            height: '45vh',
-                          }} />
-
-            <Image className='Gallery_FlexBox_image'  loading='lazy' src="/En2AL/Tap981.jpg" width={596} height={795} blurDataURL="data:..." placeholder="blur" alt="Tap" style={{
-                                    
-                                    width: 'auto ',
-                                    height: '45vh',
-                                  }} />
-
-            
+      <Image className="Gallery_FlexBox_image" loading="lazy" src="/Gallery/1.jpg" width="596" height="795" blurDataURL="data:..." placeholder="blur" alt="Loft Maker London Ltd Image1 " />
+        <Image className="Gallery_FlexBox_image" loading="lazy" src="/Gallery/2.jpg" width="596" height="795" blurDataURL="data:..." placeholder="blur" alt="Loft Maker London Ltd Image2 " />
+        <Image className="Gallery_FlexBox_image" loading="lazy" src="/Gallery/3.jpg" width="596" height="795" blurDataURL="data:..." placeholder="blur" alt="Loft Maker London Ltd Image3 " />
+        <Image className="Gallery_FlexBox_image" loading="lazy" src="/Gallery/4.jpg" width="596" height="795" blurDataURL="data:..." placeholder="blur" alt="Loft Maker London Ltd Image4 " />
+        <Image className="Gallery_FlexBox_image" loading="lazy" src="/Gallery/5.jpg" width="596" height="795" blurDataURL="data:..." placeholder="blur" alt="Loft Maker London Ltd Image5 " />
+        <Image className="Gallery_FlexBox_image" loading="lazy" src="/Gallery/6.jpg" width="596" height="795" blurDataURL="data:..." placeholder="blur" alt="Loft Maker London Ltd Image6 " />
+        <Image className="Gallery_FlexBox_image" loading="lazy" src="/Gallery/7.jpg" width="596" height="795" blurDataURL="data:..." placeholder="blur" alt="Loft Maker London Ltd Image7 " />
+        <Image className="Gallery_FlexBox_image" loading="lazy" src="/Gallery/8.jpg" width="596" height="795" blurDataURL="data:..." placeholder="blur" alt="Loft Maker London Ltd Image8 " />
+        <Image className="Gallery_FlexBox_image" loading="lazy" src="/Gallery/9.jpg" width="596" height="795" blurDataURL="data:..." placeholder="blur" alt="Loft Maker London Ltd Image9 " />
+        <Image className="Gallery_FlexBox_image" loading="lazy" src="/Gallery/10.jpg" width="596" height="795" blurDataURL="data:..." placeholder="blur" alt="Loft Maker London Ltd Image10 " />
+        <Image className="Gallery_FlexBox_image" loading="lazy" src="/Gallery/11.jpg" width="596" height="795" blurDataURL="data:..." placeholder="blur" alt="Loft Maker London Ltd Image11 " />
+        <Image className="Gallery_FlexBox_image" loading="lazy" src="/Gallery/12.jpg" width="596" height="795" blurDataURL="data:..." placeholder="blur" alt="Loft Maker London Ltd Image12 " />
+        <Image className="Gallery_FlexBox_image" loading="lazy" src="/Gallery/13.jpg" width="596" height="795" blurDataURL="data:..." placeholder="blur" alt="Loft Maker London Ltd Image13 " />
+        <Image className="Gallery_FlexBox_image" loading="lazy" src="/Gallery/14.jpg" width="596" height="795" blurDataURL="data:..." placeholder="blur" alt="Loft Maker London Ltd Image14 " />
+        <Image className="Gallery_FlexBox_image" loading="lazy" src="/Gallery/15.jpg" width="596" height="795" blurDataURL="data:..." placeholder="blur" alt="Loft Maker London Ltd Image15 " />
+        <Image className="Gallery_FlexBox_image" loading="lazy" src="/Gallery/16.jpg" width="596" height="795" blurDataURL="data:..." placeholder="blur" alt="Loft Maker London Ltd Image16 " />
+        <Image className="Gallery_FlexBox_image" loading="lazy" src="/Gallery/17.jpg" width="596" height="795" blurDataURL="data:..." placeholder="blur" alt="Loft Maker London Ltd Image17 " />
+        <Image className="Gallery_FlexBox_image" loading="lazy" src="/Gallery/18.jpg" width="596" height="795" blurDataURL="data:..." placeholder="blur" alt="Loft Maker London Ltd Image18 " />
+        <Image className="Gallery_FlexBox_image" loading="lazy" src="/Gallery/19.jpg" width="596" height="795" blurDataURL="data:..." placeholder="blur" alt="Loft Maker London Ltd Image19 " />
+        <Image className="Gallery_FlexBox_image" loading="lazy" src="/Gallery/20.jpg" width="596" height="795" blurDataURL="data:..." placeholder="blur" alt="Loft Maker London Ltd Image20 " />
+        <Image className="Gallery_FlexBox_image" loading="lazy" src="/Gallery/21.jpg" width="596" height="795" blurDataURL="data:..." placeholder="blur" alt="Loft Maker London Ltd Image21 " />
+        <Image className="Gallery_FlexBox_image" loading="lazy" src="/Gallery/22.jpg" width="596" height="795" blurDataURL="data:..." placeholder="blur" alt="Loft Maker London Ltd Image22 " />
+        <Image className="Gallery_FlexBox_image" loading="lazy" src="/Gallery/23.jpg" width="596" height="795" blurDataURL="data:..." placeholder="blur" alt="Loft Maker London Ltd Image23 " />
+        <Image className="Gallery_FlexBox_image" loading="lazy" src="/Gallery/24.jpg" width="596" height="795" blurDataURL="data:..." placeholder="blur" alt="Loft Maker London Ltd Image24 " />
+        <Image className="Gallery_FlexBox_image" loading="lazy" src="/Gallery/25.jpg" width="596" height="795" blurDataURL="data:..." placeholder="blur" alt="Loft Maker London Ltd Image25 " />
+        <Image className="Gallery_FlexBox_image" loading="lazy" src="/Gallery/26.jpg" width="596" height="795" blurDataURL="data:..." placeholder="blur" alt="Loft Maker London Ltd Image26 " />
+        <Image className="Gallery_FlexBox_image" loading="lazy" src="/Gallery/27.jpg" width="596" height="795" blurDataURL="data:..." placeholder="blur" alt="Loft Maker London Ltd Image27 " />
+        <Image className="Gallery_FlexBox_image" loading="lazy" src="/Gallery/28.jpg" width="596" height="795" blurDataURL="data:..." placeholder="blur" alt="Loft Maker London Ltd Image28 " />
+        <Image className="Gallery_FlexBox_image" loading="lazy" src="/Gallery/29.jpg" width="596" height="795" blurDataURL="data:..." placeholder="blur" alt="Loft Maker London Ltd Image29 " />
+        <Image className="Gallery_FlexBox_image" loading="lazy" src="/Gallery/30.jpg" width="596" height="795" blurDataURL="data:..." placeholder="blur" alt="Loft Maker London Ltd Image30 " />
+        <Image className="Gallery_FlexBox_image" loading="lazy" src="/Gallery/31.jpg" width="596" height="795" blurDataURL="data:..." placeholder="blur" alt="Loft Maker London Ltd Image31 " />
+        <Image className="Gallery_FlexBox_image" loading="lazy" src="/Gallery/32.jpg" width="596" height="795" blurDataURL="data:..." placeholder="blur" alt="Loft Maker London Ltd Image32 " />
+        <Image className="Gallery_FlexBox_image" loading="lazy" src="/Gallery/33.jpg" width="596" height="795" blurDataURL="data:..." placeholder="blur" alt="Loft Maker London Ltd Image33 " />
+        <Image className="Gallery_FlexBox_image" loading="lazy" src="/Gallery/34.jpg" width="596" height="795" blurDataURL="data:..." placeholder="blur" alt="Loft Maker London Ltd Image34 " />
+        <Image className="Gallery_FlexBox_image" loading="lazy" src="/Gallery/35.jpg" width="596" height="795" blurDataURL="data:..." placeholder="blur" alt="Loft Maker London Ltd Image35 " />
+        <Image className="Gallery_FlexBox_image" loading="lazy" src="/Gallery/36.jpg" width="596" height="795" blurDataURL="data:..." placeholder="blur" alt="Loft Maker London Ltd Image36 " />
+        <Image className="Gallery_FlexBox_image" loading="lazy" src="/Gallery/37.jpg" width="596" height="795" blurDataURL="data:..." placeholder="blur" alt="Loft Maker London Ltd Image37 " />
+        <Image className="Gallery_FlexBox_image" loading="lazy" src="/Gallery/38.jpg" width="596" height="795" blurDataURL="data:..." placeholder="blur" alt="Loft Maker London Ltd Image38 " />
+        <Image className="Gallery_FlexBox_image" loading="lazy" src="/Gallery/39.jpg" width="596" height="795" blurDataURL="data:..." placeholder="blur" alt="Loft Maker London Ltd Image39 " />
+        <Image className="Gallery_FlexBox_image" loading="lazy" src="/Gallery/40.jpg" width="596" height="795" blurDataURL="data:..." placeholder="blur" alt="Loft Maker London Ltd Image40 " />
+        <Image className="Gallery_FlexBox_image" loading="lazy" src="/Gallery/41.jpg" width="596" height="795" blurDataURL="data:..." placeholder="blur" alt="Loft Maker London Ltd Image41 " />
+        <Image className="Gallery_FlexBox_image" loading="lazy" src="/Gallery/42.jpg" width="596" height="795" blurDataURL="data:..." placeholder="blur" alt="Loft Maker London Ltd Image42 " />
+        <Image className="Gallery_FlexBox_image" loading="lazy" src="/Gallery/43.jpg" width="596" height="795" blurDataURL="data:..." placeholder="blur" alt="Loft Maker London Ltd Image43 " />
+        <Image className="Gallery_FlexBox_image" loading="lazy" src="/Gallery/44.jpg" width="596" height="795" blurDataURL="data:..." placeholder="blur" alt="Loft Maker London Ltd Image44 " />
+        <Image className="Gallery_FlexBox_image" loading="lazy" src="/Gallery/45.jpg" width="596" height="795" blurDataURL="data:..." placeholder="blur" alt="Loft Maker London Ltd Image45 " />
+        <Image className="Gallery_FlexBox_image" loading="lazy" src="/Gallery/46.jpg" width="596" height="795" blurDataURL="data:..." placeholder="blur" alt="Loft Maker London Ltd Image46 " />
+        <Image className="Gallery_FlexBox_image" loading="lazy" src="/Gallery/47.jpg" width="596" height="795" blurDataURL="data:..." placeholder="blur" alt="Loft Maker London Ltd Image47 " />
+        <Image className="Gallery_FlexBox_image" loading="lazy" src="/Gallery/48.jpg" width="596" height="795" blurDataURL="data:..." placeholder="blur" alt="Loft Maker London Ltd Image48 " />
+        <Image className="Gallery_FlexBox_image" loading="lazy" src="/Gallery/49.jpg" width="596" height="795" blurDataURL="data:..." placeholder="blur" alt="Loft Maker London Ltd Image49 " />
+        <Image className="Gallery_FlexBox_image" loading="lazy" src="/Gallery/50.jpg" width="596" height="795" blurDataURL="data:..." placeholder="blur" alt="Loft Maker London Ltd Image50 " />
+        <Image className="Gallery_FlexBox_image" loading="lazy" src="/Gallery/51.jpg" width="596" height="795" blurDataURL="data:..." placeholder="blur" alt="Loft Maker London Ltd Image51 " />
+        <Image className="Gallery_FlexBox_image" loading="lazy" src="/Gallery/52.jpg" width="596" height="795" blurDataURL="data:..." placeholder="blur" alt="Loft Maker London Ltd Image52 " />
+        <Image className="Gallery_FlexBox_image" loading="lazy" src="/Gallery/53.jpg" width="596" height="795" blurDataURL="data:..." placeholder="blur" alt="Loft Maker London Ltd Image53 " />
+        <Image className="Gallery_FlexBox_image" loading="lazy" src="/Gallery/54.jpg" width="596" height="795" blurDataURL="data:..." placeholder="blur" alt="Loft Maker London Ltd Image54 " />
+        <Image className="Gallery_FlexBox_image" loading="lazy" src="/Gallery/55.jpg" width="596" height="795" blurDataURL="data:..." placeholder="blur" alt="Loft Maker London Ltd Image55 " />
+        <Image className="Gallery_FlexBox_image" loading="lazy" src="/Gallery/56.jpg" width="596" height="795" blurDataURL="data:..." placeholder="blur" alt="Loft Maker London Ltd Image56 " />
+        <Image className="Gallery_FlexBox_image" loading="lazy" src="/Gallery/57.jpg" width="596" height="795" blurDataURL="data:..." placeholder="blur" alt="Loft Maker London Ltd Image57 " />
+        <Image className="Gallery_FlexBox_image" loading="lazy" src="/Gallery/58.jpg" width="596" height="795" blurDataURL="data:..." placeholder="blur" alt="Loft Maker London Ltd Image58 " />
+        <Image className="Gallery_FlexBox_image" loading="lazy" src="/Gallery/59.jpg" width="596" height="795" blurDataURL="data:..." placeholder="blur" alt="Loft Maker London Ltd Image59 " />
+        <Image className="Gallery_FlexBox_image" loading="lazy" src="/Gallery/60.jpg" width="596" height="795" blurDataURL="data:..." placeholder="blur" alt="Loft Maker London Ltd Image60 " />
 
       </section>
       <Footer/>

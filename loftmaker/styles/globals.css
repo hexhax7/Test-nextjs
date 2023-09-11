@@ -351,23 +351,43 @@ ul{
 	z-index: 100;
 	top: 1rem;
 	left: 1rem;
-	padding: 2px;
+	padding: 8px;
 	border: grey solid 0px;
 	background: none;
 	cursor: pointer;
 }
-.menuIcon{
-  font-size: 48px; color: #fe5000;
+
+.menuIcon li{
+  list-style-type: none;
+  width: 250%;
+  height: 5px;
+  background-color: black;
+  border: 1px solid black;
+  border-radius: 3px;
+  margin: 5px;
 }
 
 
-.closeIcon {
-	display: none;
-	font-size: 48px;
+
+
+.closeIcon li{
+ 
+	transition: transform 0.2s;
+  list-style-type: none;
+  width: 250%;
+  height: 5px;
+  background-color: black;
+  border: 1px solid black;
+  border-radius: 3px;
+  margin: 5px;
+  transform:  rotateY(180deg) rotate(45deg);
+ 
 }
+
+
 
 .height{
-  height: 65vh;
+  height: 65%;
 }
 
 .showMenu {
@@ -725,3 +745,5 @@ button[type="submit"]:hover {
 .Gallery_FlexBox_image{
   margin-top: 5%;
 }
+
+

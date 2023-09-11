@@ -3,6 +3,7 @@ import Image from 'next/image'
 import React from 'react';
 import Logo from "../public/3.png"
 import Link from 'next/link'
+
 import MenuComponent from '../Components/MenuComponents';
 
 export default function Nav_Bar({  }) {
@@ -15,7 +16,9 @@ export default function Nav_Bar({  }) {
                         <li>
                         <Link className="menuItem" href="/">Home</Link>
                         </li>
-                        
+                        <li>
+                            <Link className="menuItem" href="/gallery">Gallery</Link>
+                        </li>
                         <li>
                         <Link className="menuItem" href="#form_container">Contact</Link>
                         </li>
@@ -38,9 +41,10 @@ export default function Nav_Bar({  }) {
                     </footer>
                     <MenuComponent />
                     </div>
+                    
             <button class="hamburger">
-            <i class="menuIcon material-symbols-sharp">M</i>
-            <i class="material-symbols-sharp closeIcon ">X</i>
+            <i class="menuIcon material-symbols-sharp"> <li></li> <li></li> <li></li> </i>
+            <i class="material-symbols-sharp closeIcon "><li></li> <li></li> <li></li> </i>
             </button>
         </div>
 
