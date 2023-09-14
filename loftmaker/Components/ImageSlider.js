@@ -8,30 +8,18 @@ import image2 from "../public/Current-project-images/2.jpg"
 import image3 from "../public/Current-project-images/3.jpg"
 import image4 from "../public/Current-project-images/4.jpg"
 import image5 from "../public/Current-project-images/5.jpg"
-
 import image7 from "../public/Current-project-images/7.jpg"
 import image8 from "../public/Current-project-images/8.jpg"
-
 import image10 from "../public/Current-project-images/10.jpg"
-
 import image12 from "../public/Current-project-images/12.jpg"
 import image13 from "../public/Current-project-images/13.jpg"
 import image14 from "../public/Current-project-images/14.jpg"
-
-
 import image17 from "../public/Current-project-images/17.jpg"
-
 import image19 from "../public/Current-project-images/19.jpg"
-
 import image21 from "../public/Current-project-images/21.jpg"
-
-
 import image24 from "../public/Current-project-images/24.jpg"
-
 import image26 from "../public/Current-project-images/26.jpg"
 import image27 from "../public/Current-project-images/27.jpg"
-
-
 import image31 from "../public/Current-project-images/31.jpg"
 import image32 from "../public/Current-project-images/32.jpg"
 import image33 from "../public/Current-project-images/33.jpg"

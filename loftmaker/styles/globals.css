@@ -733,17 +733,23 @@ button[type="submit"]:hover {
 }
 
 .Gallery_FlexBox{
-  padding-top: 10%;
+  padding-top: 5%;
   display: flex;
-  justify-content: space-evenly;
+  margin-left: 5%;
+  flex-direction: column;
+  
   flex-wrap: wrap;
-  align-items: center;
-  max-width: 80%;
-  margin-left: 10%;
+ max-width: 90vw;
+  
+}
+.MGallery{
+  display: flex;
 }
 
 .Gallery_FlexBox_image{
-  margin-top: 5%;
+  margin-top: 2%;
+  margin-left: 2%;
+  
 }
 
 

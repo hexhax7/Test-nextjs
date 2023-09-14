@@ -1,7 +1,7 @@
 import os
 
 # Path to the folder containing the image files
-image_folder_path = "D:\LoftmakerLondon\Current-project-images"
+image_folder_path = "C:/Users/hecto/Documents/GitHub/Test-nextjs/loftmaker/public/Gallery"
 
 # Image file extension (adjust if needed)
 image_extension = ".jpg"
@@ -10,7 +10,7 @@ image_extension = ".jpg"
 image_block_template = """
 <div class="embla__slide">
     <div class="embla__slide__number"><span>{number}</span></div>
-    <Image classname="embla__slide__img" loading='lazy' src={"/Current-project-images/" + str({number}) + ".jpg"} blurDataURL="data:..." automatically provided placeholder="blur" width={100} alt="finished loft exterior" 
+    <Image classname="embla__slide__img" loading='lazy' src={"/Current-project-images/" + str({number}) + ".jpg"} blurDataURL="data:..." automatically provided placeholder="blur" width={100} alt="Loft and extension specialist Muswell Hill" 
         style={{objectFit: "cover"}}
     />
 </div>

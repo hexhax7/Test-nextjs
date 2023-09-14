@@ -6,7 +6,7 @@ import Link from 'next/link'
 
 import MenuComponent from '../Components/MenuComponents';
 
-export default function Nav_Bar({  }) {
+export default function Menu({  }) {
     return(
         <main>
             <div className="Show-portrait">
@@ -20,7 +20,7 @@ export default function Nav_Bar({  }) {
                             <Link className="menuItem" href="/gallery">Gallery</Link>
                         </li>
                         <li>
-                        <Link className="menuItem" href="#form_container">Contact</Link>
+                        <Link className="menuItem" href="/#form_container">Contact</Link>
                         </li>
                     </ul>
                     </div>
