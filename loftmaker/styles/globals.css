@@ -745,7 +745,9 @@ button[type="submit"]:hover {
 .MGallery{
   display: flex;
 }
-
+@media (orientation: portrait) and (max-width: 800px) {.MGallery{
+  flex-direction: column;
+}}
 .Gallery_FlexBox_image{
   margin-top: 2%;
   margin-left: 2%;

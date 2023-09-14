@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 
 export default function GalleryComponent() {
   const [enlargedImage, setEnlargedImage] = useState(null);
+  const [enableFunctionality, setEnableFunctionality] = useState(true);
 
   useEffect(() => {
     // Function to toggle the image size and position
@@ -78,38 +79,63 @@ export default function GalleryComponent() {
       }
     }
 
-    // Try to find all elements with the class "Gallery_FlexBox_image"
-    const galleries = document.querySelectorAll('.Gallery_FlexBox_image');
+    // Check the screen width and enable/disable functionality accordingly
+    if (enableFunctionality) {
+      // Try to find all elements with the class "Gallery_FlexBox_image"
+      const galleries = document.querySelectorAll('.Gallery_FlexBox_image');
 
-    // Loop through each element and add the click event listener
-    galleries.forEach((gallery) => {
-      if (gallery) {
-        gallery.addEventListener('click', toggleSizeAndPosition);
-      }
-    });
-
-    // Add a click event listener to the document to close the image
-    const closeOnClickOutside = (event) => {
-      // Check if the click event occurred outside the enlarged image
-      if (enlargedImage && !enlargedImage.contains(event.target)) {
-        closeEnlargedImage();
-      }
-    };
-
-    document.addEventListener('click', closeOnClickOutside);
-
-    // Don't forget to remove the event listener when the component unmounts
-    return () => {
+      // Loop through each element and add the click event listener
       galleries.forEach((gallery) => {
         if (gallery) {
-          gallery.removeEventListener('click', toggleSizeAndPosition);
+          gallery.addEventListener('click', toggleSizeAndPosition);
         }
       });
 
-      // Remove the click event listener from the document
-      document.removeEventListener('click', closeOnClickOutside);
+      // Add a click event listener to the document to close the image
+      const closeOnClickOutside = (event) => {
+        // Check if the click event occurred outside the enlarged image
+        if (enlargedImage && !enlargedImage.contains(event.target)) {
+          closeEnlargedImage();
+        }
+      };
+
+      document.addEventListener('click', closeOnClickOutside);
+
+      // Don't forget to remove the event listener when the component unmounts
+      return () => {
+        galleries.forEach((gallery) => {
+          if (gallery) {
+            gallery.removeEventListener('click', toggleSizeAndPosition);
+          }
+        });
+
+        // Remove the click event listener from the document
+        document.removeEventListener('click', closeOnClickOutside);
+      };
+    }
+  }, [enlargedImage, enableFunctionality]);
+
+  useEffect(() => {
+    // Listen for changes in the screen width and update the enableFunctionality state
+    function handleResize() {
+      if (window.innerWidth > 800) {
+        setEnableFunctionality(true);
+      } else {
+        setEnableFunctionality(false);
+      }
+    }
+
+    // Initial check for screen width
+    handleResize();
+
+    // Add a listener for screen resize events
+    window.addEventListener('resize', handleResize);
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      window.removeEventListener('resize', handleResize);
     };
-  }, [enlargedImage]);
+  }, []);
 
   return (
     <div>
