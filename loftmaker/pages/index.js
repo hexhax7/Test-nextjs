@@ -38,7 +38,7 @@ export default function Home({ mainHeaderText}) {
           <div className= {styles.mainheader} > <AnimatedTextWord text="Loft Makers London Ltd" /></div>
           <Image 
               loading='lazy'
-                src= "/65.jpg"
+                src= "/En2AL/Loft.jpg"
                 blurDataURL="data:..." automatically provided
                 placeholder="blur"
                 fill={true}
