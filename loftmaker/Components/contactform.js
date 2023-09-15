@@ -6,6 +6,7 @@ export default function Contactform() {
     async function handleSubmit(event) {
         event.preventDefault();
         const formData = new FormData(event.target);
+        const sitekey = process.env.Site_key;
 
         formData.append("access_key", process.env.API_URL);
 
@@ -48,7 +49,7 @@ export default function Contactform() {
         <div ></div>
         <ReCAPTCHA
         className='recaptcha'
-        sitekey="${process.env.Site_key}"
+        sitekey= {sitekey}
 
           
         />
