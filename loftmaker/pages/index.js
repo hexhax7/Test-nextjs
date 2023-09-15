@@ -150,7 +150,7 @@ export default function Home({ mainHeaderText}) {
             </span>
               <motion.div style={{y}}>
               <span className='Span-Margin-Left hidden'>
-              <Image className='Content-Image ' loading='lazy' src="/72.jpg" width={736} height={981} blurDataURL="data:..." placeholder="blur" alt="DoorKnob"style={{
+              <Image className='Content-Image Show-1377' loading='lazy' src="/72.jpg" width={736} height={981} blurDataURL="data:..." placeholder="blur" alt="DoorKnob"style={{
                         
                         width: 'auto ',
                         height: '45vh',
