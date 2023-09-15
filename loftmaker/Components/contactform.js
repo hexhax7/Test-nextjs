@@ -1,7 +1,7 @@
 import styles from '@/styles/Contact.module.css'
 import ReCAPTCHA from "react-google-recaptcha";
 
-const sitekey = process.env.Site_key;
+
 export default function Contactform() {
     async function handleSubmit(event) {
         event.preventDefault();
@@ -47,12 +47,7 @@ export default function Contactform() {
           <label >Message: <textarea name="message" required></textarea></label>
         </p>
         <div ></div>
-        <ReCAPTCHA
-        className='recaptcha'
-        sitekey= {sitekey}
-
-          
-        />
+     
         <p>
         
         <button type="submit"
