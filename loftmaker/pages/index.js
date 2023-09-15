@@ -199,7 +199,7 @@ export default function Home({ mainHeaderText}) {
     </p>
   </motion.div>
   <div></div>
-  <Contactform/>
+  
   <Footer/>
       
       </main>
