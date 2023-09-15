@@ -1,12 +1,12 @@
 import styles from '@/styles/Contact.module.css'
 import ReCAPTCHA from "react-google-recaptcha";
 
-
+const sitekey = process.env.Site_key;
 export default function Contactform() {
     async function handleSubmit(event) {
         event.preventDefault();
         const formData = new FormData(event.target);
-        const sitekey = process.env.Site_key;
+        
 
         formData.append("access_key", process.env.API_URL);
 
