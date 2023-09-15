@@ -713,7 +713,10 @@ button[type="submit"]:hover {
 	color: #fe5000;
 	box-shadow: 0 0 0 2px #fe5000;
 }
-
+.recaptcha{
+  margin-left: 20%;
+  margin-bottom: 2%;
+}
 /* Style for the form container */
 #form_container {
   

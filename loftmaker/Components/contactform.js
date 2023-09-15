@@ -1,4 +1,5 @@
 import styles from '@/styles/Contact.module.css'
+import ReCAPTCHA from "react-google-recaptcha";
 
 
 export default function Contactform() {
@@ -6,7 +7,7 @@ export default function Contactform() {
         event.preventDefault();
         const formData = new FormData(event.target);
 
-        formData.append("access_key", "5d5aee62-9514-42db-8dd9-abd434310f88");
+        formData.append("access_key", process.env.API_URL);
 
         const object = Object.fromEntries(formData);
         const json = JSON.stringify(object);
@@ -21,10 +22,15 @@ export default function Contactform() {
         });
         const result = await response.json();
         if (result.success) {
-            console.log(result);
+            alert("Enquiry sent. A member of our team will respond as soon as possible. ")
         }
+        else{
+          alert("Enquiry was not sent please contact us direct.")
+        }
+   
+        
     }
-
+  
   return (
     <>
     <form id="form_container" onSubmit={handleSubmit}>
@@ -40,8 +46,16 @@ export default function Contactform() {
           <label >Message: <textarea name="message" required></textarea></label>
         </p>
         <div ></div>
+        <ReCAPTCHA
+        className='recaptcha'
+        sitekey="${process.env.Site_key}"
+
+          
+        />
         <p>
-          <button type="submit">Enquire</button>
+        
+        <button type="submit"
+        >Submit</button>
         </p>
       </form>
 
