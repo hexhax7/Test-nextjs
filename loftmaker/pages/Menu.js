@@ -19,9 +19,7 @@ export default function Menu({  }) {
                         <li>
                             <Link className="menuItem" href="/gallery">Gallery</Link>
                         </li>
-                        <li>
-                        <Link className="menuItem" href="/#form_container">Contact</Link>
-                        </li>
+                       
                     </ul>
                     </div>
                     
