@@ -128,7 +128,7 @@ ul{
 .image-slide-div{
   height: 70vh;
   margin: 5%;
-  margin-bottom: 2%;
+  margin-bottom: 15%;
 }
 
 @media (orientation: portrait) and (max-width: 800px) {
