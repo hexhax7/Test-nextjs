@@ -23,6 +23,7 @@ export default function Footer({  }) {
                 <Image loading='lazy' src="/instagram.png" width={50} height={50} blurDataURL="data:..." placeholder="blur" alt="Instagram Logo" />
                 </Link>
                 </div>
+                <h2 style={{marginLeft: "42%"}}>**site is under development**</h2>
             </footer>
       </main>
     )

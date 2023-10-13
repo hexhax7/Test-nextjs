@@ -18,7 +18,7 @@ export default function Nav_Bar({  }) {
           <li>
             <Link className="menuItem-navbar" href="/gallery">Gallery</Link>
           </li>
-         
+
           <li>
             <Image className='logo' loading='lazy' src={Logo} blurDataURL="data:..." automatically provided placeholder="blur" height={90} alt="Loft Maker London Ltd Logo" />
           </li>
